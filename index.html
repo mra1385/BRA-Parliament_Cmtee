@@ -1,0 +1,682 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>مشروع قانون إصلاح وضع المصارف كما عدلته اللجنة الفرعية 1 + english-translation</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-default { background-color: rgba(84, 72, 49, 0.08); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="23fca1c0-c75b-8194-9d1c-f23aeb8d4815" class="page sans"><header><h1 class="page-title">مشروع قانون إصلاح وضع المصارف كما عدلته اللجنة الفرعية 1 + english-translation</h1><p class="page-description"></p></header><div class="page-body"><h1 id="23fca1c0-c75b-81fd-84e2-dcc358fa5e36" class="">English Translation</h1><blockquote id="23fca1c0-c75b-8190-ab1e-e78295aaf165" class="">Original file: ‎⁨مشروع قانون إصلاح وضع المصارف كما عدلته اللجنة الفرعية 1⁩.pdf<br/>Translated on July 28, 2025<br/></blockquote><h2 id="23fca1c0-c75b-8178-83fa-ea18ee227537" class="">Metadata</h2><ul id="23fca1c0-c75b-81bf-a8f6-e47f0d0116e2" class="bulleted-list"><li style="list-style-type:disc"><strong>Page Count</strong>: 35</li></ul><h2 id="23fca1c0-c75b-81cd-9964-d8c27669b157" class="">Page 1</h2><p id="23fca1c0-c75b-81ec-a6e3-e5048ca0f085" class="">Lebanese Republic<br/>Parliament<br/>***<br/></p><p id="23fca1c0-c75b-8108-9a14-c88e4fc18b29" class="">Draft Law Contained in Decree No. 193 Concerning the Restructuring of the Banking Sector in Lebanon and its Reorganization as Amended by the Subcommittee of the Finance and Budget Committee<br/>***<br/></p><p id="23fca1c0-c75b-81ed-9c33-c797a13e62cd" class=""><strong>Part One: General Provisions</strong></p><p id="23fca1c0-c75b-81ae-a4d1-f0ecdfef34ce" class=""><strong>Article 1: Definitions</strong></p><p id="23fca1c0-c75b-81bf-b297-d1d7a55f159f" class="">For the purpose of applying the provisions of this law, the following definitions and terms shall be adopted:</p><ul id="23fca1c0-c75b-81cd-8969-f5ee31c7d875" class="bulleted-list"><li style="list-style-type:disc"><strong>Banque du Liban:</strong> The Central Bank established by the law enacted by Decree No. 13513 dated 1/8/1963 (Code of Money and Credit and the establishment of the Central Bank).</li></ul><ul id="23fca1c0-c75b-8198-aee9-f071ba6e875a" class="bulleted-list"><li style="list-style-type:disc"><strong>Higher Banking Commission:</strong> Article 10 of Law No. 28 dated 9/5/1967 and its amendments (amending and completing the legislation related to banks and establishing a mixed institution for the guarantee of bank deposits) is amended to read as follows:<br/>The commission concerned with taking punitive decisions against violating financial institutions, restructuring and/or liquidation decisions, and supervising their implementation in accordance with the provisions of this law and the relevant applicable laws.<br/></li></ul><ul id="23fca1c0-c75b-8141-b49a-e3eaceada826" class="bulleted-list"><li style="list-style-type:disc"><strong>Banking Control Commission:</strong> The supervisory body established by Law No. 28/67 dated 9/5/1967 and its amendments.</li></ul><ul id="23fca1c0-c75b-816a-bde7-cc2391267881" class="bulleted-list"><li style="list-style-type:disc"><strong>Depositors:</strong> Natural or legal persons (i.e., individuals or companies) who enter into a bank deposit contract with a licensed bank, whereby they hand over a sum of money to the bank for the purpose of safekeeping or investment according to agreed-upon terms, with the bank’s obligation to return this amount upon demand or on a specific date, with or without interest.</li></ul><p id="23fca1c0-c75b-81cd-836b-e7f2d66f6ab0" class="">1</p><hr id="23fca1c0-c75b-8173-b751-e7052f9ce494"/><h2 id="23fca1c0-c75b-812c-a751-df48b301820a" class="">Page 2</h2><ul id="23fca1c0-c75b-8178-b0b9-dc76935a3f44" class="bulleted-list"><li style="list-style-type:disc"><strong>Deposits:</strong><ul id="23fca1c0-c75b-812e-bac8-da12393630f5" class="bulleted-list"><li style="list-style-type:circle"><strong>a- Customer Deposits:</strong> (including certificates of deposit issued by the bank and owned by customers) belonging to natural and legal persons, other than financial sector institutions, and which are not included among the exempted liabilities according to the definitions contained in the applicable laws.</li></ul><ul id="23fca1c0-c75b-8166-96b3-d41c87d9330d" class="bulleted-list"><li style="list-style-type:circle"><strong>b- On-Balance Sheet Deposits:</strong> belonging to financial sector institutions and arising from credit agreements between said institutions, in their capacity as financial intermediaries, and their customers.</li></ul><ul id="23fca1c0-c75b-8105-a253-f0ddd08397d8" class="bulleted-list"><li style="list-style-type:circle"><strong>c- Cash Guarantees and Cash Margins:</strong> given as collateral for funded facilities (i.e., any on-balance sheet facilities) up to the limit of the amount utilized from the facilities.</li></ul></li></ul><ul id="23fca1c0-c75b-81d5-a42b-fcb658efbed2" class="bulleted-list"><li style="list-style-type:disc"><strong>Senior Management:</strong> The bodies at banks responsible for setting policies or making executive decisions regarding investments, risks, and compliance.</li></ul><ul id="23fca1c0-c75b-8123-8ac8-fa3f4ad63779" class="bulleted-list"><li style="list-style-type:disc"><strong>Own Funds:</strong> composed of:<ul id="23fca1c0-c75b-816a-ab42-c373dcc29138" class="bulleted-list"><li style="list-style-type:circle"><strong>Common Equity Holders’ Rights:</strong> which include previous retained earnings, reserves, other comprehensive income items, and other elements of common equity holders’ rights as specified in Annex No. 1 (Hierarchy of Own Funds and Creditors).</li></ul><ul id="23fca1c0-c75b-8131-a556-fd83ab49afad" class="bulleted-list"><li style="list-style-type:circle"><strong>Additional Core Private Funds:</strong> as specified in Annex No. 1 (Hierarchy of Own Funds and Creditors).</li></ul><ul id="23fca1c0-c75b-818e-86e6-e2d3fd722078" class="bulleted-list"><li style="list-style-type:circle"><strong>Supporting Private Funds:</strong> as specified in Annex No. 1 (Hierarchy of Own Funds and Creditors).</li></ul></li></ul><ul id="23fca1c0-c75b-8193-ba43-d1536f5a1a77" class="bulleted-list"><li style="list-style-type:disc"><strong>Hierarchy of Own Funds and Creditors:</strong> The ranking of each of the elements of own funds and liabilities (as specified in Annex No. 1).</li></ul><p id="23fca1c0-c75b-8175-a5dd-e2913cdf092e" class="">2</p><hr id="23fca1c0-c75b-81ac-a5c1-ed3dd10797c3"/><h2 id="23fca1c0-c75b-8184-bd1d-ccc2ec2a0b39" class="">Page 3</h2><ul id="23fca1c0-c75b-815c-be09-f5403ad15dd5" class="bulleted-list"><li style="list-style-type:disc"><strong>Excluded Liabilities:</strong> The liabilities mentioned in Annex No. 1 which are not subject to a write-down in value or to conversion into capital instruments.</li></ul><ul id="23fca1c0-c75b-81b4-b602-d3eaec034c81" class="bulleted-list"><li style="list-style-type:disc"><strong>Financial Sector Institutions:</strong> Includes the following resident and non-resident institutions, whether they are related or unrelated to the bank:<ul id="23fca1c0-c75b-8180-a9a5-e50f526dd656" class="bulleted-list"><li style="list-style-type:circle">Central Banks.</li></ul><ul id="23fca1c0-c75b-81a6-bd20-d203494ad734" class="bulleted-list"><li style="list-style-type:circle">International and regional development banks and financial institutions.</li></ul><ul id="23fca1c0-c75b-8197-ab0f-f255a0bba5b8" class="bulleted-list"><li style="list-style-type:circle">Banks.</li></ul><ul id="23fca1c0-c75b-81c6-b000-d4508a49dd13" class="bulleted-list"><li style="list-style-type:circle">Other institutions, including:<ul id="23fca1c0-c75b-81d5-bde1-d4cb028cad2a" class="bulleted-list"><li style="list-style-type:square">Financial institutions as defined by Article 179 of the Code of Money and Credit and the related circulars issued by Banque du Liban.</li></ul><ul id="23fca1c0-c75b-8197-be6e-d6f60f485388" class="bulleted-list"><li style="list-style-type:square">Financial leasing companies.</li></ul><ul id="23fca1c0-c75b-81ae-99e4-c481a4acf206" class="bulleted-list"><li style="list-style-type:square">Lending houses regulated under Articles 183 and 184 of the Code of Money and Credit.</li></ul><ul id="23fca1c0-c75b-819d-80fe-c74ee8a1ec03" class="bulleted-list"><li style="list-style-type:square">Micro-lending institutions.</li></ul><ul id="23fca1c0-c75b-818a-be2c-c72900cbd967" class="bulleted-list"><li style="list-style-type:square">Clearing houses.</li></ul><ul id="23fca1c0-c75b-81ad-84de-fd3db57ca2a8" class="bulleted-list"><li style="list-style-type:square">Financial brokerage institutions.</li></ul><ul id="23fca1c0-c75b-8187-badd-ffe6ba74e5a1" class="bulleted-list"><li style="list-style-type:square">Exchange institutions.</li></ul><ul id="23fca1c0-c75b-816e-a941-f830c929984a" class="bulleted-list"><li style="list-style-type:square">Companies involved in the transfer of cash funds through electronic means.</li></ul><ul id="23fca1c0-c75b-81bc-b0de-c26afeeafd49" class="bulleted-list"><li style="list-style-type:square">Investment funds.</li></ul><ul id="23fca1c0-c75b-8173-86ea-fe89d312b76e" class="bulleted-list"><li style="list-style-type:square">Investment companies, including holding companies and special purpose investment entities.</li></ul><ul id="23fca1c0-c75b-8199-914d-d8874ada54e4" class="bulleted-list"><li style="list-style-type:square">Any other institution that provides financial services or engages in financial activities.</li></ul></li></ul></li></ul><ul id="23fca1c0-c75b-81e0-a9c3-ef5eb4d2694e" class="bulleted-list"><li style="list-style-type:disc"><strong>Home Competent or Supervisory Authority:</strong> The authority competent for bank resolution or the supervisory authority in the country where the head office of the foreign branch or the foreign subsidiary bank operating in Lebanon is located.</li></ul><ul id="23fca1c0-c75b-813d-b82e-fb24af7b6949" class="bulleted-list"><li style="list-style-type:disc"><strong>Host Competent or Supervisory Authority:</strong> The authority competent for bank resolution or the supervisory authority in the country where the branch of a bank headquartered in Lebanon, or the subsidiary of a Lebanese parent bank, operates.</li></ul><p id="23fca1c0-c75b-81bb-a1ab-c4dc66d75e12" class="">3</p><hr id="23fca1c0-c75b-817a-b090-e95c52980f98"/><h2 id="23fca1c0-c75b-8112-938f-de6282f4e2bc" class="">Page 4</h2><ul id="23fca1c0-c75b-8102-bcaf-c16068a2f354" class="bulleted-list"><li style="list-style-type:disc"><strong>Financial Regularity and Deposit Recovery Law:</strong> The law that allows for the rebalancing of Lebanon’s financial system by addressing the financial gap through the determination of liabilities, and which is supposed to be referred by the government for approval by the Parliament.</li></ul><ul id="23fca1c0-c75b-8163-82df-e1859f093963" class="bulleted-list"><li style="list-style-type:disc"><strong>Liquidation Process:</strong> A process that includes the sale of all of the bank’s assets, the settlement of its liabilities, the distribution of its net assets to the shareholders, and its final closure and removal from the list of banks.</li></ul><ul id="23fca1c0-c75b-8151-8f53-c9a6a7ecea9a" class="bulleted-list"><li style="list-style-type:disc"><strong>Net Asset Value:</strong> The fair value of the bank’s assets (including off-balance sheet items) minus the fair value of the bank’s liabilities (including off-balance sheet items).</li></ul><ul id="23fca1c0-c75b-812e-8643-f320cab13c48" class="bulleted-list"><li style="list-style-type:disc"><strong>Payments Due to Bank Employees:</strong> Provisions for permanent employees and compensations in accordance with the applicable laws.</li></ul><ul id="23fca1c0-c75b-813d-957f-f896d53107ad" class="bulleted-list"><li style="list-style-type:disc"><strong>Hierarchy:</strong> The ranking in terms of absorbing losses related to the different categories of own funds and liabilities when applying a bank resolution or liquidation process.</li></ul><ul id="23fca1c0-c75b-815d-9d89-fda4ee90a58e" class="bulleted-list"><li style="list-style-type:disc"><strong>Related Institutions:</strong><br/>Financial and non-financial sector institutions related to the bank through any of the following channels:<br/><ul id="23fca1c0-c75b-8128-80c3-c12f67be2a30" class="bulleted-list"><li style="list-style-type:circle">The parent institution that exercises control over the bank in accordance with International Financial Reporting Standards (IFRS).</li></ul><ul id="23fca1c0-c75b-8161-af92-d35ead5681c5" class="bulleted-list"><li style="list-style-type:circle">Subsidiary institutions or institutions that are subject to the bank’s control in accordance with International Financial Reporting Standards.</li></ul><ul id="23fca1c0-c75b-81bc-8837-ef47538b73f9" class="bulleted-list"><li style="list-style-type:circle">Associate institutions in accordance with International Financial Reporting Standards.</li></ul><ul id="23fca1c0-c75b-81a6-ab4a-d1ef05415a13" class="bulleted-list"><li style="list-style-type:circle">Sister institutions defined as institutions subject to the control of the bank’s major shareholders.</li></ul></li></ul><ul id="23fca1c0-c75b-8105-8b96-c29fad3f2e9e" class="bulleted-list"><li style="list-style-type:disc"><strong>Bank Resolution Process:</strong> Consists of the competent authority, referred to in Article 5 of this law, exercising the powers specified in Article 16 of this law, towards a bank that meets the conditions for being subject to a resolution process, as specified in Article 3 of this law, with the aim of achieving the objectives specified in Article 3 of this law.</li></ul><ul id="23fca1c0-c75b-811c-a160-ff53ab8da223" class="bulleted-list"><li style="list-style-type:disc"><strong>Major Shareholder:</strong> The holder of the economic right who ultimately owns, directly or indirectly, 5% or more of the shares or voting rights.</li></ul><p id="23fca1c0-c75b-811a-a445-fd437b079e49" class="">4</p><hr id="23fca1c0-c75b-817d-b5bd-ce8e246f2031"/><h2 id="23fca1c0-c75b-81e8-b06b-d60f96ec20b4" class="">Page 5</h2><ul id="23fca1c0-c75b-816f-9f6e-c85ab13d4602" class="bulleted-list"><li style="list-style-type:disc"><strong>New Deposits:</strong> These are deposits denominated in foreign currency, originating from bank transfers from abroad or cash deposits after 10/30/2019.</li></ul><ul id="23fca1c0-c75b-818f-a63e-d76bd441d636" class="bulleted-list"><li style="list-style-type:disc"><strong>Concept of a Single Depositor:</strong> This involves the process of aggregating a depositor’s personal credit accounts and their share of joint accounts at the bank where they hold bank accounts. Joint accounts are distributed among the joint account holders according to the terms of the signed agreement between the joint account holders and each bank. If the signed agreement does not specify any condition regarding the share belonging to the joint account holders, the joint accounts are then distributed equally. If a joint account holder does not have a personal account at any bank, the total of their shares in the various joint accounts is considered a single depositor’s deposit.</li></ul><ul id="23fca1c0-c75b-81cc-b2b7-fdcd4aa9e0cd" class="bulleted-list"><li style="list-style-type:disc"><strong>Unrelated Institutions:</strong> Financial and non-financial sector institutions that are not covered by the definition of “Related Institutions.”</li></ul><ul id="23fca1c0-c75b-8179-86ac-ecb175e39146" class="bulleted-list"><li style="list-style-type:disc"><strong>Insured Deposits:</strong> Deposits subject to the National Deposit Guarantee Institution according to the current law and its amendments.</li></ul><ul id="23fca1c0-c75b-8108-ae66-ed0803af21c6" class="bulleted-list"><li style="list-style-type:disc"><strong>Unsecured Liabilities:</strong> Consist of:<ul id="23fca1c0-c75b-814d-bd8b-d54f6855285c" class="bulleted-list"><li style="list-style-type:circle">Liabilities not legally secured by cash collateral, cash margins, or financial instruments.</li></ul><ul id="23fca1c0-c75b-816a-b7b3-f456ad141bcb" class="bulleted-list"><li style="list-style-type:circle">The portion of legally secured liabilities that is not covered by cash collateral, cash margins, or financial instruments. These liabilities include deposits of financial sector institutions (including certificates of deposit issued by the bank and owned by financial sector institutions).</li></ul><ul id="23fca1c0-c75b-81c5-8197-c5d6acc809a8" class="bulleted-list"><li style="list-style-type:circle">On-balance sheet deposits belonging to financial sector institutions and arising from credit agreements between those institutions, in their capacity as financial intermediaries, and their clients.</li></ul><ul id="23fca1c0-c75b-81ff-bd38-dc7a21325e04" class="bulleted-list"><li style="list-style-type:circle">Loans from financial sector institutions.</li></ul><ul id="23fca1c0-c75b-81b7-8158-f4d346505adf" class="bulleted-list"><li style="list-style-type:circle">Bonds issued by the bank and owned by individuals and institutions from the financial and non-financial sectors, whether related or unrelated to the bank.</li></ul></li></ul><p id="23fca1c0-c75b-8199-99ec-f691ff48f72d" class="">5</p><hr id="23fca1c0-c75b-8126-8307-ca89bd3edf61"/><h2 id="23fca1c0-c75b-81b6-9526-f3244a38aea5" class="">Page 6</h2><ul id="23fca1c0-c75b-8181-b778-cb9c56a0dd91" class="bulleted-list"><li style="list-style-type:disc">Other unsecured liabilities (with the exception of customer deposits) that are not otherwise excluded.</li></ul><p id="23fca1c0-c75b-819b-a6bf-fc08585559d4" class=""><strong>Article 2: Preliminary Provisions</strong></p><p id="23fca1c0-c75b-81ef-86eb-c2b6e005a2ce" class="">Articles 1 to 36 define the provisions upon which the bank resolution and liquidation process is based, and shall be considered effective upon the issuance of the Financial Regularity and Deposit Repayment Law.</p><p id="23fca1c0-c75b-81a8-ae6b-f1155e79acd8" class=""><strong>Article 3: Objectives of this Law</strong></p><p id="23fca1c0-c75b-8110-941f-e7a042722af9" class="">In compliance with the Code of Money and Credit, this law aims to address cases of default, protect deposits during the liquidation and resolution process, and limit the use of public funds in the resolution process of any defaulting bank.</p><p id="23fca1c0-c75b-81ee-8b32-d7457fa630ff" class=""><strong>Article 4: Scope of Application of this Law</strong></p><p id="23fca1c0-c75b-81f1-be1c-e0711063d483" class="">The provisions of this law shall apply to foreign banks or branches of foreign banks operating in Lebanon, as well as to Lebanese banks, including their branches abroad, unless the laws and regulations of the host countries provide otherwise.</p><p id="23fca1c0-c75b-81c4-bca4-debb510e2f0b" class=""><strong>Article Five:</strong></p><p id="23fca1c0-c75b-8199-b1a4-c6ce58d02c38" class="">For the purposes of applying the provisions of the law on the resolution and reorganization of banks in Lebanon, Article 10 of Law No. 28/1967 dated 9/5/1967 is amended to read as follows:</p><p id="23fca1c0-c75b-81ab-9452-d87e05c53ac3" class="">The Higher Banking Commission shall be composed of two chambers as follows:</p><p id="23fca1c0-c75b-819c-ac8e-e80bc0d64dd3" class="">1- The First Chamber shall exercise the powers of the Higher Banking Commission as stipulated in Law No. 28/1967 dated 9/5/1967 and the applicable laws and shall be composed of:<br/>- The Governor of Banque du Liban - as President.<br/></p><p id="23fca1c0-c75b-810e-81a8-d1fe993aec05" class="">6</p><hr id="23fca1c0-c75b-8128-9acf-e49745ade565"/><h2 id="23fca1c0-c75b-81c2-aadf-e9ebedba9e99" class="">Page 7</h2><ul id="23fca1c0-c75b-812b-8751-d2484157d722" class="bulleted-list"><li style="list-style-type:disc">The First Deputy Governor of Banque du Liban.</li></ul><ul id="23fca1c0-c75b-8148-95b2-fb666f4ef60f" class="bulleted-list"><li style="list-style-type:disc">The Director General of Finance.</li></ul><ul id="23fca1c0-c75b-8181-868e-f04bc4feed33" class="bulleted-list"><li style="list-style-type:disc">A judge specializing in financial matters, appointed by a decree issued by the Council of Ministers based on a proposal from the Minister of Finance, who is selected from a list of candidates prepared by the Higher Judicial Council.</li></ul><ul id="23fca1c0-c75b-8107-9c0b-fee193280852" class="bulleted-list"><li style="list-style-type:disc">The Chairman of the Banking Control Commission.</li></ul><ul id="23fca1c0-c75b-8186-9cee-f516530d2230" class="bulleted-list"><li style="list-style-type:disc">The Chairman of the National Deposit Guarantee Institution established under Law No. 28/67.</li></ul><p id="23fca1c0-c75b-81da-9e21-d07f159d6a26" class="">The First Chamber of the Commission replaces the Sanctions Committee stipulated in Article 209 of the Code of Money and Credit, applies the sanctions set forth in Article 208 of the same law as appropriate, and exercises the powers granted to it under Law No. 28/67.</p><p id="23fca1c0-c75b-8163-b95e-daa20530decf" class="">The Banking Control Commission shall keep the Governor of Banque du Liban informed of the overall and individual situation of the banks, and the First Chamber of the Commission has the right to request from the said committee any additional information on the cases presented to it.</p><p id="23fca1c0-c75b-818e-8819-cff58dc76ced" class="">The First Chamber of the Commission shall convene upon the invitation of its President or at the request of two of its members, and its meetings shall not be legal unless at least four members are present. It shall take its decisions by a majority of at least three votes, and in the event of a tie, the President’s vote shall be the deciding one.</p><p id="23fca1c0-c75b-81a5-8e8f-e2d07690dbb1" class="">2- The Second Chamber shall be the appellate body for decisions concerning banks that must undergo status rectification or liquidation operations in accordance with the applicable laws and the powers and tasks of the restructuring body specified in the body of this law. It shall be composed of:<br/>- The Governor of Banque du Liban - as President.<br/>- Two of the Governor’s deputies, chosen by the Central Council of Banque du Liban.<br/>- A judge specializing in financial matters, appointed by a decree issued by the Council of Ministers based on a proposal from the Minister of Finance, who is selected from a list of candidates prepared by the Higher Judicial Council.<br/></p><p id="23fca1c0-c75b-8196-aa8c-e31c52fcf523" class="">7</p><hr id="23fca1c0-c75b-81f3-a3eb-c6b6c6d6ee15"/><h2 id="23fca1c0-c75b-81ad-b470-edb82812ef84" class="">Page 8</h2><ul id="23fca1c0-c75b-81b2-826f-e67c7fb0ec22" class="bulleted-list"><li style="list-style-type:disc">A representative from the National Deposit Guarantee Institution, provided that they are a member of the institution’s board of directors who does not represent commercial banks.</li></ul><ul id="23fca1c0-c75b-8118-9fb9-eac82348fac1" class="bulleted-list"><li style="list-style-type:disc">The Director General of Finance as a member of the Central Council of Banque du Liban, who shall exercise his duties in accordance with Article 28 of the Code of Money and Credit.</li></ul><p id="23fca1c0-c75b-8151-bda9-f7ff24358c3b" class="">The Chairman of the Banking Control Commission shall attend the meetings of the Second Chamber of the Commission without the right to vote or be counted for the quorum. He shall present a briefing on the situation of the bank under consideration and present the recommendations of the Banking Control Commission, supported by an independent financial assessment and analysis report prepared by an independent party appointed by the Banking Control Commission.</p><p id="23fca1c0-c75b-812a-861a-c31dbd6a7457" class="">Each member of the Second Chamber of the Commission must submit to the General Secretariat of the Commission, two business days before the date of the meeting scheduled to discuss the situation of a bank subject to the law on reforming the status of banks in Lebanon and their reorganization, a declaration of any current or previous relationship with the concerned bank during the last two years preceding the date of the meeting.</p><p id="23fca1c0-c75b-8127-9441-c3a0733c809b" class="">Should any member of the Second Chamber of the Commission have any type of relationship that could expose them to a conflict of interest or affect in any way their independence and decision-making while performing their duties regarding the bank subject to this law, this member shall abstain from participating in any discussion or decision concerning the bank in question and from exercising their voting rights in this regard. In this case, the decisions of the Second Chamber of the Commission shall be taken by a majority of the remaining members.</p><p id="23fca1c0-c75b-8173-bb77-faeeef484f04" class="">The Second Chamber of the Commission shall convene upon the invitation of its President or at the request of three of its members, and its meetings shall not be legal unless at least four members are present. It shall take its decisions by a majority of the votes of those present, and in the event of a tie, the President’s vote shall be the deciding one. The President is responsible for setting the agenda for its meetings. The deliberations of the Second Chamber of the Commission shall be confidential, and its decisions shall not be disclosed except by virtue of reports or decisions signed by its President.</p><p id="23fca1c0-c75b-81ae-8916-c8725b899b30" class="">8</p><hr id="23fca1c0-c75b-81ae-8456-e240e5825e47"/><h2 id="23fca1c0-c75b-819c-80aa-d3bcd1990ab4" class="">Page 9</h2><p id="23fca1c0-c75b-8168-8388-dd5960834ca9" class="">The Banking Control Commission must keep the Governor of Banque du Liban successively informed of the situation of the banks and submit its reports to the General Secretariat of the Higher Banking Commission. The General Secretariat shall refer each report to one of the two chambers in accordance with the recommendation of the Banking Control Commission, which is based on the nature of the intended measures, whether for imposing penalties or for addressing the situation of the concerned bank. This shall be done in coordination with the Governor of Banque du Liban in his capacity as President of the Higher Banking Commission.</p><p id="23fca1c0-c75b-81f9-87d4-d096b349ae17" class=""><strong>Article 6: Obligations of the Members of the Higher Banking Commission to Avoid Conflicts of Interest</strong></p><ul id="23fca1c0-c75b-8182-9f48-e74c2f79dca0" class="bulleted-list"><li style="list-style-type:disc">Each member of the Higher Banking Commission shall submit to the General Secretariat of this Commission a special declaration concerning their independence and the absence of a conflict of interest when performing their duties with respect to a bank, based on the criteria listed below. The deadline for submitting this declaration shall be one month from the date of publication of this law in the Official Gazette for current members, and one month from the date of appointment for new members. Each member must also, immediately, submit an updated declaration should any change occur in their relationship with any bank. The General Secretariat of the Commission is tasked with ensuring the proper implementation of this process.</li></ul><ul id="23fca1c0-c75b-8121-bd2b-e30328edf98a" class="bulleted-list"><li style="list-style-type:disc">Should any member of the Higher Banking Commission have any type of direct or indirect relationship that exposes them to a conflict of interest or affects their independence in any way when performing their duties with respect to a bank subject to this law, this member shall refrain from participating in any discussion or decision regarding the concerned bank and from exercising their voting rights in this regard. In this case, the Commission’s decisions shall be taken by a majority of the remaining members.</li></ul><ul id="23fca1c0-c75b-8199-bb61-e1aeea5f6fbf" class="bulleted-list"><li style="list-style-type:disc">The following criteria are adopted in determining a member’s independence and the absence of a conflict of interest:</li></ul><ul id="23fca1c0-c75b-81e3-b2db-f333bfdc6e99" class="bulleted-list"><li style="list-style-type:disc">They shall not have been a shareholder in the bank or its related institutions in the two years preceding their appointment.</li></ul><ul id="23fca1c0-c75b-8156-a3e5-c171604a162b" class="bulleted-list"><li style="list-style-type:disc">They shall not have held, in the two years preceding their appointment, the position of a member of the board of directors, senior management, or a consultant at the bank or its related institutions.</li></ul><ul id="23fca1c0-c75b-8155-ae3a-da29393aeac4" class="bulleted-list"><li style="list-style-type:disc">They shall not be a borrower from the bank or from its related institutions.</li></ul><p id="23fca1c0-c75b-81cc-895a-ccd9d7ea1dab" class="">9</p><hr id="23fca1c0-c75b-818b-9279-ff70451b4237"/><h2 id="23fca1c0-c75b-8130-93c4-f73cdcf7b164" class="">Page 10</h2><ul id="23fca1c0-c75b-8141-8479-ee35e25a1140" class="bulleted-list"><li style="list-style-type:disc">They shall not have deposits exceeding 100 thousand US dollars at the bank or its related institutions.</li></ul><ul id="23fca1c0-c75b-815e-8bbf-dfbc363e7ac2" class="bulleted-list"><li style="list-style-type:disc">They shall not be related by kinship up to the fourth degree to a shareholder, a member of the board of directors, or senior management at the bank or its related institutions.</li></ul><ul id="23fca1c0-c75b-8178-bdce-fec452f81398" class="bulleted-list"><li style="list-style-type:disc">Any other criteria that may negatively affect their independence, directly or indirectly.</li></ul><p id="23fca1c0-c75b-81ea-97bb-fcaa8ba00306" class=""><strong>Article 7: Commencing the Process of Bank Resolution or Liquidation</strong></p><ul id="23fca1c0-c75b-81ee-8048-cc7dc97f996c" class="bulleted-list"><li style="list-style-type:disc">The Second Chamber of the Higher Banking Commission is responsible for deciding to subject banks to one of the following two processes in accordance with the provisions of this law:</li></ul><p id="23fca1c0-c75b-815f-a2b2-dfe168054c9c" class="">a- The Bank Resolution Process:<br/>The Commission shall issue a resolution decision for the bank (a resolution decision) which includes, for each bank, the resolution tools to be applied, the measures that the bank must adhere to throughout the process of resolving its situation, and the time required to complete these measures.<br/></p><p id="23fca1c0-c75b-8157-8613-ccac285b38c6" class="">b- The Liquidation Process:<br/>The Commission shall issue a decision to strike the bank off Banque du Liban’s list of banks and a decision to liquidate the concerned bank.<br/>The striking off of the bank shall be followed by a decision to appoint a liquidation committee.<br/></p><ul id="23fca1c0-c75b-818b-b38a-d81f9d50ba84" class="bulleted-list"><li style="list-style-type:disc">The decision for resolution or the decision to strike off is made based on a final assessment report sent by the Banking Control Commission, which is based on an independent assessor’s report to the Higher Banking Commission regarding the necessity of liquidating the bank or rehabilitating it through resolution procedures, after justifying the reasons that led to its decision.</li></ul><ul id="23fca1c0-c75b-81d1-bbfb-dc971c194ca1" class="bulleted-list"><li style="list-style-type:disc">The process of bank resolution or liquidation is based on an evaluation aimed at determining the net value of the bank’s assets and the size of the losses. The resolution process is based on an evaluation prepared by the Banking Control Commission, which raises a recommendation to the Higher Banking Commission regarding the possibility of the bank’s failure and the necessity of taking remedial measures, provided that the evaluation is completed based on</li></ul><p id="23fca1c0-c75b-8133-9540-e4167560df30" class="">10</p><hr id="23fca1c0-c75b-81d9-a893-da0e8242b4d8"/><h2 id="23fca1c0-c75b-81e5-b88d-f2e1eb594f16" class="">Page 11</h2><p id="23fca1c0-c75b-813b-b45b-cee2b652a326" class="">at the request of the Higher Banking Commission, in accordance with the rules, from independent assessors as specified in Article 10 of this law, for the Higher Banking Commission to make the final decision regarding resolution or liquidation.</p><ul id="23fca1c0-c75b-81d8-b404-c9ecc1ecb00d" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission shall state in the minutes of its meetings the reasons justifying its decisions, including the reasons for not adopting the recommendations of the Banking Control Commission, if that occurs.</li></ul><p id="23fca1c0-c75b-81a5-ae38-c3a85e2989b2" class=""><strong>Article 8: Notification and Publication of Decisions of the Higher Banking Commission</strong></p><ul id="23fca1c0-c75b-8138-a8cc-c92d7fe0a2fc" class="bulleted-list"><li style="list-style-type:disc">Regarding the bank resolution process:<br/>The Higher Banking Commission shall immediately notify the concerned bank of the resolution decision (including the resolution tools to be applied) and the decision shall be registered in the Commercial Register. The Higher Banking Commission shall publish a summary that does not include any details about the resolution tools for the concerned bank, along with a summary of the evaluation results, in the Official Gazette, in a widely circulated newspaper in Lebanon, and on the website of Banque du Liban.<br/></li></ul><ul id="23fca1c0-c75b-8103-ac13-f7c3fd19ab6d" class="bulleted-list"><li style="list-style-type:disc">Regarding the liquidation process:<br/>The Higher Banking Commission shall immediately notify the concerned bank of the decision to strike it off and the decision to appoint a liquidator or a liquidation committee, and the two decisions shall be registered in the Commercial Register. The two decisions, along with a summary of the evaluation results, shall be published in the Official Gazette, in a widely circulated newspaper in Lebanon, and on the website of Banque du Liban.<br/></li></ul><ul id="23fca1c0-c75b-8186-b1a0-e35160eb4756" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission shall publish an annual report summarizing the progress made towards achieving its objectives within the scope of this law, and shall send a copy of this report to the Lebanese Parliament.</li></ul><p id="23fca1c0-c75b-8196-927e-f86530c73c68" class=""><strong>Article 9: Funding of the Higher Banking Commission</strong></p><p id="23fca1c0-c75b-8198-bb48-cece9cf808a1" class="">Banque du Liban shall bear the expenses of the Higher Banking Commission.</p><p id="23fca1c0-c75b-81fb-ac69-f1967255c923" class="">11</p><hr id="23fca1c0-c75b-81f3-9e63-e535573e796e"/><h2 id="23fca1c0-c75b-818d-a119-efdf75344ffb" class="">Page 12</h2><p id="23fca1c0-c75b-81a6-87d9-d33cb9184cbc" class=""><strong>Chapter Three: The Independent Assessment Process</strong></p><p id="23fca1c0-c75b-81cf-82a5-ded3a69bd0d8" class=""><strong>Article 10: Principles of Assessment and Appointment of Independent Assessors</strong></p><ul id="23fca1c0-c75b-81d9-8910-ea11c6d9c882" class="bulleted-list"><li style="list-style-type:disc">The Banking Control Commission shall appoint independent assessors to conduct the assessment.</li></ul><ul id="23fca1c0-c75b-8124-b567-c15db445e507" class="bulleted-list"><li style="list-style-type:disc">The assessment shall be based on international valuation standards and International Financial Reporting Standards, while taking into account the prudential requirements and directives issued by Banque du Liban.</li></ul><ul id="23fca1c0-c75b-8119-87a3-c07067b4984f" class="bulleted-list"><li style="list-style-type:disc">The assessment shall be completed within the timeframe set by the Banking Control Commission.</li></ul><ul id="23fca1c0-c75b-8153-bd58-db3375fc2d04" class="bulleted-list"><li style="list-style-type:disc">The following eligibility criteria shall be considered when appointing independent assessors:</li></ul><ul id="23fca1c0-c75b-810f-8c5a-ec6f88bfad68" class="bulleted-list"><li style="list-style-type:disc">They must possess the required qualifications, specifically regarding the criteria of integrity, competence, and professional experience.</li></ul><ul id="23fca1c0-c75b-81a3-bfc8-c4884ecf4d1c" class="bulleted-list"><li style="list-style-type:disc">They must be independent and have no professional or personal relationship with the bank or its related institutions that could expose them to a conflict of interest.</li></ul><ul id="23fca1c0-c75b-815c-aa28-f753d3b25015" class="bulleted-list"><li style="list-style-type:disc">Independent assessors, their partners in the partnership agreement, and any external parties they contract with shall, for the duration of their assignment and even after its completion, adhere to the regulations of banking and professional secrecy for the benefit of the concerned bank and its clients, with respect to the information they become privy to in the course of performing their duties.</li></ul><ul id="23fca1c0-c75b-8182-918a-c1cfb87a73dc" class="bulleted-list"><li style="list-style-type:disc">Banque du Liban shall bear all costs of the appointment of the independent assessor(s).</li></ul><ul id="23fca1c0-c75b-8105-b146-ed72b81c297a" class="bulleted-list"><li style="list-style-type:disc">The independent assessors shall submit their reports to the Banking Control Commission, with a copy to the bank, within the timeframe set by the Banking Control Commission.</li></ul><p id="23fca1c0-c75b-815c-959a-da90745f7968" class="">12</p><hr id="23fca1c0-c75b-81fb-92e6-d7d8cfea793d"/><h2 id="23fca1c0-c75b-81fe-8a4a-ed2c080f6cde" class="">Page 13</h2><ul id="23fca1c0-c75b-81e7-9c64-ea7a34887920" class="bulleted-list"><li style="list-style-type:disc">Banque du Liban shall issue, based on a proposal from the Banking Control Commission, instructions and details regarding the features, selection, and qualification of the assessor(s), along with the means, tools, and details of the required assessment.</li></ul><p id="23fca1c0-c75b-81b5-9832-e3fc81d2f73a" class=""><strong>Article 11: Acknowledgment of Assessment Results</strong></p><p id="23fca1c0-c75b-81eb-977d-fb1bf9b42142" class="">The bank’s failure to notify the Higher Banking Commission of any objection to the assessment results conducted by the independent assessors shall be considered an acknowledgment of the assessment results. In the event the bank objects to the assessment results for material reasons, it may notify the Higher Banking Commission in writing, with a copy to the Banking Control Commission, of the detailed reasons for its objection within a maximum period of 30 business days from the date of the assessment report’s issuance.</p><p id="23fca1c0-c75b-81ef-941c-dd06112e03f1" class="">The Higher Banking Commission may, for legitimate reasons and after receiving a report from the Banking Control Commission, decide to conduct a new assessment, partially or fully, within a maximum period of one month. In this case, the Higher Banking Commission shall decide whether new independent assessors will be appointed, and the assessment results shall be final.</p><p id="23fca1c0-c75b-8191-9b93-d71ad06f16c4" class="">The Higher Banking Commission shall make its decision on the resolution of the bank based on the assessment report and any amendments it deems appropriate after reviewing the bank’s submission. In the case of liquidation, it shall make its decision in accordance with what is stated in Article 23.</p><p id="23fca1c0-c75b-8134-950e-e40b5d860ca3" class=""><strong>Chapter Four: The Process of Rectifying the Bank’s Status</strong></p><p id="23fca1c0-c75b-8191-a936-f6f1788a02fb" class=""><strong>Article 12: Criteria for Failure or Potential Failure</strong></p><ul id="23fca1c0-c75b-8177-9e9d-f0654a651ae6" class="bulleted-list"><li style="list-style-type:disc">The Banking Control Commission shall assess whether the bank has failed or is likely to fail, and whether any alternative measures, such as a recovery plan or any other regulatory intervention, could prevent the bank’s failure, based on one of the following criteria:</li></ul><ul id="23fca1c0-c75b-8193-aa4d-fabcf5d834fc" class="bulleted-list"><li style="list-style-type:disc">The bank’s failure or potential failure to comply with the minimum capital requirements in a timely manner.</li></ul><ul id="23fca1c0-c75b-812a-888b-ebf78bd3efbb" class="bulleted-list"><li style="list-style-type:disc">The bank’s failure or potential failure to comply with the minimum liquidity requirements in a timely manner.</li></ul><p id="23fca1c0-c75b-8128-a580-c557e3574222" class="">13</p><hr id="23fca1c0-c75b-81b3-90f1-f79ae6421581"/><h2 id="23fca1c0-c75b-81cb-b9f2-d4a98031173e" class="">Page 14</h2><ul id="23fca1c0-c75b-8162-9731-f200ed57ec77" class="bulleted-list"><li style="list-style-type:disc">The bank’s failure or potential failure to meet its obligations as they fall due.</li></ul><ul id="23fca1c0-c75b-81ed-9559-d91c1892c5b4" class="bulleted-list"><li style="list-style-type:disc">The bank’s failure or potential failure to achieve and maintain profitability.</li></ul><ul id="23fca1c0-c75b-81c3-a10a-d5afa2ecc4f1" class="bulleted-list"><li style="list-style-type:disc">The bank’s failure or potential failure to comply with the conditions under which the license was granted, including a material breach of applicable laws or regulations.</li></ul><ul id="23fca1c0-c75b-8137-a7c8-f7a1914501fa" class="bulleted-list"><li style="list-style-type:disc">In the event that the Banking Control Commission deems that the bank has failed or is likely to fail, it shall submit a recommendation to the Higher Banking Commission within a maximum period of one week from the date of its assessment.</li></ul><p id="23fca1c0-c75b-8129-a577-ea876c78e7cd" class=""><strong>Article 13: Bank Resolution Tools</strong></p><ul id="23fca1c0-c75b-8161-b00b-c67f4d7775fa" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission may decide to apply any of the following bank resolution tools, either individually or in conjunction with other tools:</li></ul><ul id="23fca1c0-c75b-81f1-a069-fc9c4389a1dc" class="bulleted-list"><li style="list-style-type:disc">Bail-in.</li></ul><ul id="23fca1c0-c75b-81d9-b89e-e1e413d2f1e6" class="bulleted-list"><li style="list-style-type:disc">Recapitalization of the bank by shareholders, the parent bank, or new investors.</li></ul><ul id="23fca1c0-c75b-81c5-933b-e812014302ef" class="bulleted-list"><li style="list-style-type:disc">Transfer of some or all of the bank’s assets, rights, and liabilities to another institution.</li></ul><ul id="23fca1c0-c75b-8184-b55a-c77633ec432b" class="bulleted-list"><li style="list-style-type:disc">Merger with another bank.</li></ul><ul id="23fca1c0-c75b-81b2-bbe7-e017cdf4f110" class="bulleted-list"><li style="list-style-type:disc">The bank resolution tools shall be applied as specified in the resolution decision issued by the Higher Banking Commission for each bank, in accordance with the provisions of Article 7 of this law.</li></ul><p id="23fca1c0-c75b-816e-8a1e-e75bf3039f59" class=""><strong>Article 14: General Principles Governing the Bank Resolution Process</strong></p><p id="23fca1c0-c75b-813c-8200-c1f5ea04fbc7" class="">(Suspension of this article due to its direct link to the Financial Regularity and Deposit Recovery bill)</p><p id="23fca1c0-c75b-81d0-9d4c-ff6bf070c522" class="">The following principles shall apply in the implementation of the bank resolution process:</p><ul id="23fca1c0-c75b-8109-b830-cdc1ce7bf216" class="bulleted-list"><li style="list-style-type:disc">The hierarchy of own funds and creditors as specified in Annex No. 1 shall be observed.</li></ul><p id="23fca1c0-c75b-8142-98c9-e5192b6b62af" class="">14</p><hr id="23fca1c0-c75b-8174-b892-f8eeaef643d1"/><h2 id="23fca1c0-c75b-81cc-88c0-c1fcdae36fd9" class="">Page 15</h2><ul id="23fca1c0-c75b-816f-98fb-fcf314754e37" class="bulleted-list"><li style="list-style-type:disc">Own funds shall absorb all losses first, on a pro-rata basis within a single liability class, according to the hierarchy shown in Annex No. 1.</li></ul><ul id="23fca1c0-c75b-81ca-a898-c8335dd7f380" class="bulleted-list"><li style="list-style-type:disc">The bank’s creditors shall absorb losses on a pro-rata basis within a single liability class, according to the hierarchy shown in Annex No. 1.</li></ul><ul id="23fca1c0-c75b-819b-97a0-f84a60d0f988" class="bulleted-list"><li style="list-style-type:disc">Creditors within the same class shall be treated equally in accordance with Annex No. 1 (the principle of equal treatment).</li></ul><ul id="23fca1c0-c75b-8156-a875-c737211330b1" class="bulleted-list"><li style="list-style-type:disc">Depositors shall be protected in accordance with what will be determined in the law on addressing the financial gap, which allows for restoring balance to the financial system in line with the objectives mentioned in Article 3 of this law. No creditor within a single class, as per Annex No. 1, shall, as a result of the application of bank resolution tools, be in a worse financial position than their assumed position in the event of the bank’s liquidation. In circumstances where it is established for a creditor and/or shareholder that their financial position upon the bank’s resolution is worse than their assumed financial position had a liquidation decision been made instead of a resolution decision in the context of this law, the creditors and/or shareholders may submit appeals to the special court mentioned in Article 29 of this law within a maximum period of three months from the date of publication of the resolution decision. In cases where the entitlement of the creditor and/or shareholder is proven, the special court shall determine the compensation amount and demand its payment from the bank.</li></ul><ul id="23fca1c0-c75b-81c6-9e23-f01c2b530037" class="bulleted-list"><li style="list-style-type:disc">Bail-in (reduction in value and/or conversion of liabilities to capital instruments): In the event bail-in is used as one of the bank resolution tools, this tool shall be applied to customer deposits based on the single depositor concept.</li></ul><ul id="23fca1c0-c75b-81ec-bf91-c24e47593706" class="bulleted-list"><li style="list-style-type:disc">Bank resolution tools shall be used until the bank complies with the minimum requirements for the adequacy of own funds.</li></ul><ul id="23fca1c0-c75b-8114-aed6-c9ab597b97c5" class="bulleted-list"><li style="list-style-type:disc">Certain liabilities are excluded from the mechanism of reduction or conversion to capital instruments, as indicated in Annex No. 1 (Excluded Liabilities).</li></ul><ul id="23fca1c0-c75b-81d1-a3af-c9e60ac69b7c" class="bulleted-list"><li style="list-style-type:disc">The bank’s obligations related to contingent liabilities, including off-balance sheet guarantees and credits, shall be cancelled where possible without additional risks and costs, and the cash collateral provided for them shall be released.</li></ul><p id="23fca1c0-c75b-8120-bab1-c07c3bfa82cf" class="">15</p><hr id="23fca1c0-c75b-8107-967b-c77695605488"/><h2 id="23fca1c0-c75b-816b-95a9-d83994a42288" class="">Page 16</h2><ul id="23fca1c0-c75b-8105-98e7-e529a6299bac" class="bulleted-list"><li style="list-style-type:disc">Derivatives contracts shall be terminated and the remaining related liabilities, if any, shall be considered as unsecured liabilities, if possible without additional risks and costs.</li></ul><ul id="23fca1c0-c75b-8111-9094-d10f6f5cdd35" class="bulleted-list"><li style="list-style-type:disc">All temporary accounts shall be settled or cleared.</li></ul><ul id="23fca1c0-c75b-8164-8a60-e31a9b7561c6" class="bulleted-list"><li style="list-style-type:disc">Netting shall be performed between funded facilities (i.e., on-balance sheet facilities) and the cash collateral and/or cash margins and/or the fair value of financial instruments (bonds, shares, etc., if any) provided as security for these facilities, up to the amount utilized from these facilities, provided there is a legally enforceable netting agreement and the netting criteria are met in accordance with International Accounting Standard 32. Amounts exceeding the utilized amount from the facilities shall be subject to the bank resolution process.</li></ul><p id="23fca1c0-c75b-81b5-b843-c9acd4a24404" class=""><strong>Article 15: Exiting the “Under Resolution” Status</strong></p><ul id="23fca1c0-c75b-81df-bea9-ce5b51ced03a" class="bulleted-list"><li style="list-style-type:disc">The bank shall send a request to the Higher Banking Commission, with a copy to the Banking Control Commission, requesting to exit the “under resolution” status and justifying its eligibility to do so.</li></ul><ul id="23fca1c0-c75b-817e-a6c1-e2d13c42aeb3" class="bulleted-list"><li style="list-style-type:disc">The Banking Control Commission shall assess the bank’s eligibility to exit the “under resolution” status, including the bank’s status, its ability to continue, and its compliance with the laws, regulations, and provisions mentioned in its resolution decision within the specified deadlines. The Banking Control Commission shall send its recommendation on this matter to the Higher Banking Commission within a reasonable timeframe, not to exceed one month from the date the request is complete.</li></ul><ul id="23fca1c0-c75b-8111-94fe-f18025b22679" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission shall decide, based on the recommendation of the Banking Control Commission, whether the concerned bank may exit the “under resolution” status and shall notify the bank of its exit. This decision shall be registered in the Commercial Register and published in the Official Gazette, in a widely circulated newspaper in Lebanon, and on the website of Banque du Liban.</li></ul><p id="23fca1c0-c75b-81e8-a98b-e3354a66ad60" class="">16</p><hr id="23fca1c0-c75b-8172-9718-dff6566e531c"/><h2 id="23fca1c0-c75b-81de-a628-f4838b355b05" class="">Page 17</h2><p id="23fca1c0-c75b-8199-b798-c1e518ecc5dd" class=""><strong>Chapter Five: Powers of the Higher Banking Commission / Second Chamber</strong></p><p id="23fca1c0-c75b-8133-a14b-d7e1214869f8" class=""><strong>Article 16: Powers of the Higher Banking Commission</strong></p><ul id="23fca1c0-c75b-81b6-b75a-da441219ad8e" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission shall have authority over the bank and exercises its powers over both the bank individually and collectively, without the need for the approval of the bank’s shareholders, its creditors, its board of directors, its senior management, or any other party, and especially that the Commission’s decision is not contingent upon the approval of any other authority.</li></ul><ul id="23fca1c0-c75b-81bf-8fdb-f296c158108f" class="bulleted-list"><li style="list-style-type:disc">The powers of the Higher Banking Commission include the following:</li></ul><ul id="23fca1c0-c75b-81ca-bd36-c5f46eeb9a4b" class="bulleted-list"><li style="list-style-type:disc">Appointing a temporary manager, in cases where this is appropriate in accordance with the provisions of Chapter 8 of this law.</li></ul><ul id="23fca1c0-c75b-8116-ba6c-e075947ea05b" class="bulleted-list"><li style="list-style-type:disc">Dismissing or replacing members of the Board of Directors and/or senior management, or requesting the bank to do so.</li></ul><ul id="23fca1c0-c75b-814a-ad4a-f27b9cf4a993" class="bulleted-list"><li style="list-style-type:disc">Appointing one or more independent, non-executive board members, or requesting the bank to do so.</li></ul><ul id="23fca1c0-c75b-811b-88fb-c0a3dc4cb033" class="bulleted-list"><li style="list-style-type:disc">Objecting to the appointment of new members to the Board of Directors and/or senior management.</li></ul><ul id="23fca1c0-c75b-811b-8f84-d47588b6a431" class="bulleted-list"><li style="list-style-type:disc">Approving the bank resolution plan prepared/updated periodically for each bank.</li></ul><ul id="23fca1c0-c75b-8127-87b5-e99f4c43ccab" class="bulleted-list"><li style="list-style-type:disc">Imposing the necessary measures to remove obstacles to the feasibility of resolving the bank’s situation, including but not limited to:<br/>^ Requesting the bank to sell assets, including but not limited to its participations abroad.<br/>^ Requesting the bank to limit or suspend certain existing operations and business activities.<br/>^ Requesting the bank to change its legal or operational structure, including but not limited to restructuring its ownership structure.<br/></li></ul><ul id="23fca1c0-c75b-81dd-b43f-f723ae2cad23" class="bulleted-list"><li style="list-style-type:disc">Initiating the bank resolution process and deciding on its duration as needed.</li></ul><ul id="23fca1c0-c75b-81d7-a69d-c732913fef5f" class="bulleted-list"><li style="list-style-type:disc">Imposing on the bank the application of resolution measures and tools.</li></ul><ul id="23fca1c0-c75b-81bf-9f8a-f0d372e45a54" class="bulleted-list"><li style="list-style-type:disc">Modifying the maturity of debt instruments and other bank liabilities (including deposits), or adjusting the interest rate, and/or the principal due on these and other instruments and liabilities, or the due date of the interest and/or principal as needed.</li></ul><p id="23fca1c0-c75b-819f-80e3-d0dfbe33ed86" class="">17</p><hr id="23fca1c0-c75b-8159-b405-e8da606b81c1"/><h2 id="23fca1c0-c75b-81bb-a5e3-cb0c591656b1" class="">Page 18</h2><ul id="23fca1c0-c75b-81ad-8793-fa019e29ff42" class="bulleted-list"><li style="list-style-type:disc">Suspending the trading of listed capital instruments issued by the bank, where it applies, and/or postponing market disclosure requirements after coordination with the competent authority.</li></ul><ul id="23fca1c0-c75b-8120-85dc-e2e3642010fc" class="bulleted-list"><li style="list-style-type:disc">Imposing a temporary moratorium to suspend the effects of existing and future legal proceedings for a period of two months, extendable up to a maximum of 8 months when necessary.</li></ul><ul id="23fca1c0-c75b-811c-915b-d29344bee1a1" class="bulleted-list"><li style="list-style-type:disc">Requiring third parties to continue providing essential services to the bank whose situation is being resolved, in accordance with the existing terms and conditions before the resolution of the bank’s situation.</li></ul><ul id="23fca1c0-c75b-816c-b871-f35ac7a1f239" class="bulleted-list"><li style="list-style-type:disc">Imposing a suspension of early termination rights by prohibiting the execution of contractual clauses related to finance lease, service, or license agreements, which allow the counterparty to the bank under resolution to perform a set-off, accelerate the payment of obligations, or terminate these contracts upon the commencement of the bank resolution process.</li></ul><p id="23fca1c0-c75b-81ad-b903-fe6a5ba6a8f5" class="">The suspension of early termination rights related to financial contracts must not exceed a period of 3 days.<br/>The early termination rights enjoyed by the counterparty against the bank under resolution shall be preserved in the event of any default that is not related to the commencement of the bank’s resolution process, before or after the suspension period.<br/></p><ul id="23fca1c0-c75b-8167-bb6f-c4f31ec8b5de" class="bulleted-list"><li style="list-style-type:disc">Prohibiting the payment of any dividends to holders of capital instruments or the distribution of other capital gains to them, and any type of payment to members of the board of directors and senior managers, other than the basic allocations paid to senior management.</li></ul><ul id="23fca1c0-c75b-811d-b6c4-d52604124c0e" class="bulleted-list"><li style="list-style-type:disc">Imposing the recovery of funds paid to members of the board of directors or senior management in a manner that violates the law or the circulars of Banque du Liban or good governance rules, for a period of 10 previous years.</li></ul><ul id="23fca1c0-c75b-8101-87de-f9853b39ec6e" class="bulleted-list"><li style="list-style-type:disc">Striking off the concerned bank from the list of banks of Banque du Liban for the cases specified in this law, and then appointing a liquidator or a liquidation committee in accordance with Article 24 of this law.</li></ul><ul id="23fca1c0-c75b-814e-a40c-c45f3689ed4b" class="bulleted-list"><li style="list-style-type:disc">Filing a lawsuit in the name and for the account of the bank, or at the request of the bank or the temporary manager, before the competent Lebanese courts and/or any competent court in other countries, against major shareholders, members of the board of directors and senior management, and auditors, who held positions in the ten years preceding the date of the resolution decision, and this, if there are logical reasons to suspect their involvement in any civil or criminal offense.</li></ul><ul id="23fca1c0-c75b-816c-8fbc-c5ef40cbba10" class="bulleted-list"><li style="list-style-type:disc">Giving instructions to the liquidator/liquidation committee in case of liquidation (as determined by Article 25 of this law).</li></ul><p id="23fca1c0-c75b-81f7-a558-c3f02215603e" class="">18</p><hr id="23fca1c0-c75b-8136-93e2-f91801ddd078"/><h2 id="23fca1c0-c75b-8131-9c87-f073be478a20" class="">Page 19</h2><ul id="23fca1c0-c75b-8139-b075-f2e708312a4b" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission may decide, after obtaining a report from the Banking Control Commission, for legitimate reasons related to the discovery of factual errors in the assessment conducted by the independent assessor, to partially or fully re-evaluate the bank, through the same independent assessor or another independent assessor, within an expedited and reasonable timeframe. The results of the second assessment shall be final and binding.</li></ul><ul id="23fca1c0-c75b-819c-b22b-c2428e676cc6" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission may decide not to adopt the general principle of treating creditors within the same class equally, specifying the cases where this principle was not applied and providing a transparent explanation of the reasons, but only if it deems it necessary to contain the potential impact of a bank’s failure on the banking sector as a whole or to secure the maximum benefit for all creditors.</li></ul><ul id="23fca1c0-c75b-814a-8142-c50ef6594296" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission may, if necessary, carry out a reverse operation, partially or fully, for any reduction in value and/or for other resolution tools. In this case, the Higher Banking Commission may decide to increase the value of the liabilities of creditors and/or shareholders that should not be subject to reduction and/or other resolution tools for the bank. The reverse operation shall be carried out in accordance with Annex No. 1 (Hierarchy of Own Funds and Creditors).</li></ul><p id="23fca1c0-c75b-815e-b61c-fb67b187bfb6" class=""><strong>Chapter Six: Powers of the Banking Control Commission</strong></p><p id="23fca1c0-c75b-81a2-b030-cca571d29013" class=""><strong>Article 17: Powers of the Banking Control Commission in the Context of the Bank Resolution Process</strong></p><ul id="23fca1c0-c75b-814f-ae67-ee5336ddfa09" class="bulleted-list"><li style="list-style-type:disc">The bank whose situation is being resolved shall remain under the supervision of the Banking Control Commission.<br/>-In addition to the powers and responsibilities granted to the Banking Control Commission under other provisions of this law and under other laws, the Banking Control Commission shall do the following:<br/></li></ul><ul id="23fca1c0-c75b-8175-bc67-cd8f3672c006" class="bulleted-list"><li style="list-style-type:disc">Prepare a provisional assessment of the bank and/or appoint an independent assessor to assess the bank.</li></ul><ul id="23fca1c0-c75b-81c9-b678-daeee72aa73d" class="bulleted-list"><li style="list-style-type:disc">Send a report to the Higher Banking Commission on the assessment results.</li></ul><p id="23fca1c0-c75b-81dd-a3c9-eaf6636b5f2f" class="">19</p><hr id="23fca1c0-c75b-819d-84ce-e6d33b68717e"/><h2 id="23fca1c0-c75b-8133-83dc-d8687d07fd1b" class="">Page 20</h2><ul id="23fca1c0-c75b-810b-bd8f-e639e489cc5d" class="bulleted-list"><li style="list-style-type:disc">Sending a recommendation to the Higher Banking Commission regarding the necessary measures, including the bank resolution tools that must be adopted, or the liquidation or resolution of the bank’s situation and proposing the necessary measures.</li></ul><ul id="23fca1c0-c75b-8167-83a4-eaa3a8c4829d" class="bulleted-list"><li style="list-style-type:disc">Following up on the implementation of the bank’s resolution process and sending periodic reports to the Higher Banking Commission regarding compliance or non-compliance with the resolution decision.</li></ul><ul id="23fca1c0-c75b-812e-8fec-cf13be318864" class="bulleted-list"><li style="list-style-type:disc">Conducting an assessment of the eligibility and suitability of new shareholders and the members appointed to the board of directors and/or senior management of the bank whose situation is being resolved.</li></ul><ul id="23fca1c0-c75b-8187-b0ba-e9732601be15" class="bulleted-list"><li style="list-style-type:disc">Reviewing the reports of the temporary manager and sending any observations to the Higher Banking Commission when needed.</li></ul><ul id="23fca1c0-c75b-81c9-881f-de1d2ae025a8" class="bulleted-list"><li style="list-style-type:disc">Preparing a resolution plan for each bank and sending it to the Higher Banking Commission.</li></ul><ul id="23fca1c0-c75b-81b1-aa00-d75e74aed8aa" class="bulleted-list"><li style="list-style-type:disc">The Banking Control Commission shall issue, as needed, technical instructions and requirements to ensure the proper application of its powers and responsibilities in accordance with this law.</li></ul><ul id="23fca1c0-c75b-819c-98dc-f2f701020430" class="bulleted-list"><li style="list-style-type:disc">The Banking Control Commission has the right to access all information necessary to implement the bank resolution process and to exercise its powers and responsibilities in accordance with this law.</li></ul><ul id="23fca1c0-c75b-811f-9e61-c05a224c8160" class="bulleted-list"><li style="list-style-type:disc">The Banking Control Commission shall submit a report on the foregoing to the Higher Banking Commission.</li></ul><p id="23fca1c0-c75b-81d0-a83b-c1d82f0002a1" class=""><strong>Chapter Seven: Cooperation with the Higher Banking Commission</strong></p><p id="23fca1c0-c75b-8101-baf6-edf8145b7682" class=""><strong>Article 18: Cooperation of Various Parties with the Higher Banking Commission</strong></p><ul id="23fca1c0-c75b-8131-a7e7-f91c932b2432" class="bulleted-list"><li style="list-style-type:disc">The Capital Markets Authority, the Insurance Control Commission, Banque du Liban, the Banking Control Commission, the Commercial Register, the Real Estate Register, Midclear, the National Deposit Guarantee Institution, and any other parties concerned with the application of the provisions of this law must cooperate with the Higher Banking Commission, and coordination shall be made with the Ministry of Finance in all matters the Commission deems necessary.</li></ul><ul id="23fca1c0-c75b-8160-b5f9-f5236371e6dc" class="bulleted-list"><li style="list-style-type:disc">Each of the aforementioned parties shall provide the Higher Banking Commission, within the timeframe set by the latter, with the necessary data, recommendations, and approvals.</li></ul><p id="23fca1c0-c75b-813d-91c9-fa76b3a8070d" class="">20</p><hr id="23fca1c0-c75b-81ad-be23-e0cc5e6fa1b6"/><h2 id="23fca1c0-c75b-81c1-8c13-e0cee0308041" class="">Page 21</h2><ul id="23fca1c0-c75b-814c-b7bd-d6000977ca62" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission shall consult the Central Council of Banque du Liban, in line with its duties, regarding financial stability issues that may arise.</li></ul><ul id="23fca1c0-c75b-8149-ab05-ff7485cebf55" class="bulleted-list"><li style="list-style-type:disc">The Central Council of Banque du Liban shall send a recommendation to the Higher Banking Commission within a timeframe set by this Commission.</li></ul><p id="23fca1c0-c75b-8145-a223-d0bb2a52e48b" class=""><strong>Chapter Eight: The Temporary Manager</strong></p><p id="23fca1c0-c75b-81cc-8147-e127e3660a92" class=""><strong>Article 19: Appointment of the Temporary Manager</strong></p><ul id="23fca1c0-c75b-818a-8865-c6acc8f0c012" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission shall, if it deems it appropriate, appoint a temporary manager for a pre-determined period that is renewable by this Commission. It may delegate to him specific or broad powers, including the powers to manage the affairs of the bank undergoing resolution and the powers of the board of directors. The temporary manager shall exercise any powers related to the resolution of the bank’s situation based on a written decision from the Higher Banking Commission, which defines, for each bank, the temporary manager’s powers, scope of work, duties, term of appointment, and obligations towards the Higher Banking Commission.</li></ul><ul id="23fca1c0-c75b-818a-8582-ed93cf5108e7" class="bulleted-list"><li style="list-style-type:disc">The decision to appoint the temporary manager, issued by the Higher Banking Commission, shall be registered in the Commercial Register, and published in the Official Gazette, in a widely circulated newspaper in Lebanon, and on the website of Banque du Liban.</li></ul><ul id="23fca1c0-c75b-81b6-b8ef-c3abf67dc53b" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission shall determine the remuneration of the temporary manager, and the concerned bank shall bear the full expenses.</li></ul><ul id="23fca1c0-c75b-81fa-ad16-dfb8e847e74f" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission may, if it deems it necessary, dismiss the temporary manager at any time and may appoint a replacement for the remainder of his term.</li></ul><p id="23fca1c0-c75b-8119-a7fa-efbc9fc7e405" class=""><strong>Article 20: Qualifications of the Temporary Manager</strong></p><p id="23fca1c0-c75b-81f3-93ea-db036942eff9" class="">The temporary manager must:</p><ul id="23fca1c0-c75b-8176-baba-fc3b47b5e269" class="bulleted-list"><li style="list-style-type:disc">Possess extensive professional experience of not less than twenty years in the banking and financial fields, with administrative experience and in-depth knowledge of the applicable financial and banking laws and regulations.</li></ul><p id="23fca1c0-c75b-8161-bb5d-d53e04a4f4c7" class="">21</p><hr id="23fca1c0-c75b-8138-aeb7-fc0379b419a8"/><h2 id="23fca1c0-c75b-8116-82b4-e2d28c7d0b8b" class="">Page 22</h2><ul id="23fca1c0-c75b-8170-846f-d30b1dadc1d6" class="bulleted-list"><li style="list-style-type:disc">Be independent of the bank whose situation is being rectified.</li></ul><p id="23fca1c0-c75b-8165-924c-e5e8192d31c0" class="">The independence criteria include the following:<br/>* Not be, directly or indirectly, a shareholder in the bank or its related institutions in the five years preceding his appointment.<br/>* Not have, directly or indirectly, held a position as a board member, senior manager, or advisor at the bank or its related institutions in the two years preceding his appointment.<br/>* Not be a borrower from the bank or its related institutions for more than 100 thousand US dollars.<br/>* Not be a depositor (more than 100 thousand US dollars) at the bank or its related institutions.<br/>* Not have a kinship relationship up to the fourth degree with a shareholder or a member of the board of directors or senior management at the bank or its related institutions.<br/>* Any other criteria that may negatively affect his independence, directly or indirectly.<br/></p><ul id="23fca1c0-c75b-8151-9bf8-fca4520405e5" class="bulleted-list"><li style="list-style-type:disc">In the event the bank participates in an operation, and it is found that the temporary manager has a fundamental interest or relationship with it (directly or indirectly), this operation may be exceptionally carried out only after prior written approval from the Higher Banking Commission.</li></ul><ul id="23fca1c0-c75b-8136-a709-e2d946bcd290" class="bulleted-list"><li style="list-style-type:disc">Disclose to the Higher Banking Commission any interest or relationship that conflicts with the principle of independence and absence of conflict of interest, and in the event he refrains from rectifying the situation as required, the Higher Banking Commission shall have the authority to dismiss him.</li></ul><p id="23fca1c0-c75b-81a3-9a65-fd9b29f3c25e" class=""><strong>Article 21: Powers and Responsibilities of the Temporary Manager</strong></p><ul id="23fca1c0-c75b-818c-b288-d7d3af30a7fc" class="bulleted-list"><li style="list-style-type:disc">The temporary manager shall exercise the powers granted to him by the Higher Banking Commission in the written decision that defines the scope of his work, and his work shall be under the supervision of the Higher Banking Commission.</li></ul><ul id="23fca1c0-c75b-8148-830b-dea305c588cf" class="bulleted-list"><li style="list-style-type:disc">The temporary manager shall have unrestricted management over the assets, offices, property, accounting books, and other records of the concerned bank, and he shall also have the right of access to all information necessary to perform his duties.</li></ul><p id="23fca1c0-c75b-8180-a5cb-c83d7a99cb0f" class="">22</p><hr id="23fca1c0-c75b-8188-8a71-df0c540ae47a"/><h2 id="23fca1c0-c75b-8102-aa3d-decd24bc7de7" class="">Page 23</h2><ul id="23fca1c0-c75b-8139-97c3-c5344dbd7d7e" class="bulleted-list"><li style="list-style-type:disc">It is within the temporary manager’s authority to dismiss any of the managers and/or responsible employees, and to appoint a replacement for them.</li></ul><ul id="23fca1c0-c75b-812b-a21f-cb122c42cdb4" class="bulleted-list"><li style="list-style-type:disc">The temporary manager shall, at least quarterly and when needed, submit a report to the Higher Banking Commission, with a copy to the Banking Control Commission, regarding the work accomplished, the evolution of the concerned bank’s situation, and the work plan to be completed. In addition to that, and in the event the bank’s difficulties persist, he shall submit a report to the Higher Banking Commission that defines the nature, source, and importance of the obstacles, as well as the additional measures that would improve the situation of the concerned bank.</li></ul><ul id="23fca1c0-c75b-81f1-a49b-e0fabf898d13" class="bulleted-list"><li style="list-style-type:disc">The temporary manager must submit a report to the Higher Banking Commission, with a copy to the Banking Control Commission, regarding any malpractice that he becomes aware of during his term of appointment.</li></ul><ul id="23fca1c0-c75b-8133-b7f2-d6c022fb2db1" class="bulleted-list"><li style="list-style-type:disc">All decisions issued by the temporary manager are subject to review before the Higher Banking Commission.</li></ul><p id="23fca1c0-c75b-81a2-9180-d60157212576" class=""><strong>Chapter Nine: The Liquidation Process</strong></p><p id="23fca1c0-c75b-811f-8e69-ef152b8ab72e" class=""><strong>Article 22: Objectives of Liquidation</strong></p><p id="23fca1c0-c75b-8154-ae83-f18db2e5392d" class="">The liquidation process is carried out with the aim of protecting financial stability and maximizing the value of the benefit for all creditors.</p><p id="23fca1c0-c75b-81cd-b0ab-de9921f0ae38" class="">The provisions of Article 17 of Law No. 110 dated 7/11/1991 and its amendments (Financial Situation Rectification) related to the self-liquidation report of any bank shall apply. In the event a bank decides to conduct a self-liquidation, it must submit a request to the Higher Banking Commission showing that its assets cover all liabilities.</p><p id="23fca1c0-c75b-81e6-bd88-caa93751ea00" class=""><strong>Article 23: Decision to Strike Off Leading to Liquidation</strong></p><ul id="23fca1c0-c75b-81c7-9e07-e91ed78b4557" class="bulleted-list"><li style="list-style-type:disc">In the two cases shown below, the Higher Banking Commission shall strike the bank off the list of banks of Banque du Liban, if it deems it appropriate:</li></ul><p id="23fca1c0-c75b-810e-b6c7-d8db2c9af43b" class="">23</p><hr id="23fca1c0-c75b-81d0-b888-e041dd03335b"/><h2 id="23fca1c0-c75b-8129-bf35-cb74250066ec" class="">Page 24</h2><p id="23fca1c0-c75b-81af-82c9-daefb7e3e606" class="">1- Before initiating the resolution process: Following an assessment report from the Banking Control Commission, which recommends liquidation on the basis of the bank’s failure or potential failure and the impossibility of its rehabilitation through resolution measures, the bank shall be given the right to present any defenses or provide supporting documents to refute the submitted report, and this before the Higher Banking Commission within a maximum period of 15 days.</p><p id="23fca1c0-c75b-8182-8747-f3dd704aa2b4" class="">2- At any time after initiating the resolution process:</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="23fca1c0-c75b-819d-aa31-d2d5f4a294f8" class="code"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">a- Following the receipt of an assessment report from the Banking Control Commission concluding that the bank has failed or is likely to fail despite the attempt to rehabilitate it through resolution measures.
+
+b- Following the receipt of a report from the temporary manager highlighting the necessity of liquidating the concerned bank.</code></pre><ul id="23fca1c0-c75b-81ab-bba4-dc9fc84b6894" class="bulleted-list"><li style="list-style-type:disc">The strike-off decision is based on Articles 140 and 209 of the Lebanese Code of Money and Credit. In this case, the provisions of Article 141 of the Code of Money and Credit shall apply, and the concerned bank shall be considered under liquidation (in a state of suspension of payments), and its liquidation must be carried out in accordance with the liquidation provisions stipulated in this law.</li></ul><ul id="23fca1c0-c75b-8106-b289-f251a69c056b" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission, after the strike-off decision, shall appoint a liquidator or a liquidation committee, depending on the size of the bank under liquidation.</li></ul><ul id="23fca1c0-c75b-8117-817a-f3a7fe9567b1" class="bulleted-list"><li style="list-style-type:disc">All liquidation operations shall be referred to the second chamber for the application of the provisions of this law, and the provisions of Chapter 9 of this law shall apply exclusively and shall supersede any other laws or regulations that conflict with its content.</li></ul><ul id="23fca1c0-c75b-8121-9d57-d1352c17ce3e" class="bulleted-list"><li style="list-style-type:disc">The bank, once under liquidation, must always use the phrase “under liquidation” next to its name, especially in its correspondence with others, until the liquidation process is completed.</li></ul><ul id="23fca1c0-c75b-8152-ae19-d95c5d7d0606" class="bulleted-list"><li style="list-style-type:disc">After the date of issuance of the strike-off and liquidation decision, and in the event of new grounds for suspicion that any of the major shareholders, members of the board of directors, senior management, and authorized signatories who held positions</li></ul><p id="23fca1c0-c75b-81f5-93bd-f1494e7bca08" class="">24</p><hr id="23fca1c0-c75b-813c-9ae7-d54be4e139f4"/><h2 id="23fca1c0-c75b-8112-a786-e496351051f9" class="">Page 25</h2><p id="23fca1c0-c75b-81c4-80b9-f0b56f8619ca" class="">in the ten years preceding the date of the strike-off decision, are involved in a civil or criminal offense, the liquidator/liquidation committee and/or the Higher Banking Commission must:</p><ul id="23fca1c0-c75b-81b2-8e52-c1d27205975b" class="bulleted-list"><li style="list-style-type:disc">Notify the aforementioned persons of the necessity to refrain from disposing of all or some of their movable and immovable properties and their bank accounts, and place a lien on them, in addition to a decision to ban them from travel, and the effects of these measures shall not exceed six months, non-renewable.</li></ul><ul id="23fca1c0-c75b-81e8-8d59-f2ed67d2f87e" class="bulleted-list"><li style="list-style-type:disc">Request from the competent courts in Lebanon or abroad to impose a precautionary attachment on all or some of the movable and immovable assets belonging to the aforementioned persons, in accordance with the applicable Lebanese and foreign laws.</li></ul><ul id="23fca1c0-c75b-813e-a409-e721ff892e9c" class="bulleted-list"><li style="list-style-type:disc">Prosecute these persons before the competent Lebanese courts and/or any competent foreign court for any civil and/or criminal liability incumbent upon them under the applicable laws and regulations.</li></ul><p id="23fca1c0-c75b-81d2-9663-e17906976aea" class="">After either of the two aforementioned procedures are put into effect, the aforementioned persons shall be considered to have waived the rights granted to them under the provisions of the Banking Secrecy Law, where it exists.</p><p id="23fca1c0-c75b-81c6-9036-dd0c95466569" class="">In the event the temporary precautionary attachment is to be executed, and based on the request of the liquidator/liquidation committee, the concerned major shareholders, members of the board of directors, senior management, authorized signatories, and auditors must provide the liquidator/liquidation committee, within ten business days of its request, with a complete and detailed list of all movable and immovable assets they own in Lebanon and abroad, under penalty of criminal prosecution and imprisonment for a period of three months, with the obligation to hand over what is requested of them and to bear the costs of its collection through law firms appointed by the Higher Banking Commission.</p><p id="23fca1c0-c75b-81e0-a319-edf4228b9dba" class=""><strong>Article 24: Appointment of a Liquidator/Liquidation Committee</strong></p><p id="23fca1c0-c75b-81e1-8162-e7fafc3102f7" class="">The Higher Banking Commission shall, within thirty days from the issuance of the strike-off decision, appoint a liquidator or a liquidation committee of five members, depending on the size of the concerned bank, provided that this committee includes:<br/>* a member representing the creditors.<br/>* a member representing the shareholders.<br/></p><p id="23fca1c0-c75b-811d-8ea7-cc0d0a702107" class="">25</p><hr id="23fca1c0-c75b-81f9-8ad1-de61f5265076"/><h2 id="23fca1c0-c75b-812b-96ab-f44bdc37fe60" class="">Page 26</h2><ul id="23fca1c0-c75b-81e7-8696-d13fc096cbbb" class="bulleted-list"><li style="list-style-type:disc">A member representing the depositors.</li></ul><ul id="23fca1c0-c75b-81d5-9c8a-d451ebc14d3c" class="bulleted-list"><li style="list-style-type:disc">An expert in banking or financial affairs.</li></ul><ul id="23fca1c0-c75b-81fa-8080-d7f888977927" class="bulleted-list"><li style="list-style-type:disc">A legal expert.</li></ul><ul id="23fca1c0-c75b-8108-8045-eeb6f93bf6b8" class="bulleted-list"><li style="list-style-type:disc">The head of the National Deposit Guarantee Institution or a representative appointed by this head.</li></ul><p id="23fca1c0-c75b-81b9-9e77-dcd522a1d64f" class="">The Higher Banking Commission shall appoint a chairman for this committee from among these members and shall define his powers. The chairman shall carry out the daily tasks related to the liquidation process. Furthermore, any settlement agreement or any sale or liquidation of the bank’s assets for which a decision is made by the liquidation committee shall only become effective after obtaining written approval from the Higher Banking Commission.</p><p id="23fca1c0-c75b-8136-8237-dba8f15fd478" class="">The liquidation committee shall convene at the request of its chairman or two (2) of its members. It shall make its decisions by a majority of its members. The chairman shall represent the committee before third parties, when needed.</p><p id="23fca1c0-c75b-8163-bc7d-c2a4e5a057fb" class="">In the event of a vacancy in the committee’s composition (death, resignation, health conditions, etc.), the Higher Banking Commission shall appoint a replacement within a reasonable period not to exceed 15 days.</p><ul id="23fca1c0-c75b-814b-a016-c3e9928fea43" class="bulleted-list"><li style="list-style-type:disc">It is required that the liquidator/any member of the liquidation committee:</li></ul><ul id="23fca1c0-c75b-8115-ae35-e5a27c17f2a4" class="bulleted-list"><li style="list-style-type:disc">Possess the required qualifications according to best practices, especially regarding the standards of integrity, competence, independence, and professional experience in his field of specialization.</li></ul><ul id="23fca1c0-c75b-81d1-8362-d2aa6458a022" class="bulleted-list"><li style="list-style-type:disc">Not have any connection or relationship of any kind, professional or personal, that could expose him to a conflict of interest, or affect in any way his independence and decision-making while performing the tasks assigned to him.</li></ul><ul id="23fca1c0-c75b-8107-a5d8-e19fdb702984" class="bulleted-list"><li style="list-style-type:disc">Not be a borrower or depositor (more than 100 thousand US dollars) at the bank or its related institutions.</li></ul><ul id="23fca1c0-c75b-810f-8e2b-ca4124763f59" class="bulleted-list"><li style="list-style-type:disc">Not be a current or former member of the board of directors or senior management or an advisor to the concerned board under liquidation or any of its related institutions, within the five years preceding his appointment.</li></ul><ul id="23fca1c0-c75b-81a7-9da5-e9c3e9623070" class="bulleted-list"><li style="list-style-type:disc">Not have audited the accounts of the bank under liquidation during the two years preceding the strike-off decision.</li></ul><ul id="23fca1c0-c75b-8171-afad-f960809898de" class="bulleted-list"><li style="list-style-type:disc">Not have a kinship relationship up to the fourth degree with any shareholder or member of the board of directors.</li></ul><p id="23fca1c0-c75b-813d-af5b-d6795318aabd" class="">26</p><hr id="23fca1c0-c75b-8199-9e20-d3be44f02624"/><h2 id="23fca1c0-c75b-81a5-ad98-d080e23141b5" class="">Page 27</h2><ul id="23fca1c0-c75b-8131-bc48-c960d01a8c29" class="bulleted-list"><li style="list-style-type:disc">The Higher Banking Commission shall determine the remuneration of the chairman and members of the liquidation committee, and the concerned bank shall bear the costs.</li></ul><ul id="23fca1c0-c75b-8144-bc0c-e394ff3f4bc6" class="bulleted-list"><li style="list-style-type:disc">The decision to appoint the liquidator/liquidation committee shall be published in the Official Gazette, in at least one local newspaper, and on the electronic website of the Higher Banking Commission and/or Banque du Liban and/or the Banking Control Commission.</li></ul><p id="23fca1c0-c75b-8180-8eea-c8868aa52732" class=""><strong>Article 25: Role and Powers of the Liquidator/Liquidation Committee</strong></p><ul id="23fca1c0-c75b-81fa-aa88-ec2d800a66af" class="bulleted-list"><li style="list-style-type:disc">The liquidator/liquidation committee shall submit to the Higher Banking Commission a liquidation plan for its approval, which includes a timeline with a reasonable deadline and specific steps for selling the bank’s assets and distributing their proceeds according to the hierarchy of own funds and creditors mentioned in Annex No. 1. The Higher Banking Commission shall approve this plan and monitor its implementation and take the necessary measures in case of any delay.</li></ul><ul id="23fca1c0-c75b-811f-8cf5-d41c8b0f5298" class="bulleted-list"><li style="list-style-type:disc">The liquidator/liquidation committee shall act in good faith, with the necessary diligence and care, to complete the liquidation process within the approved timeframe.</li></ul><ul id="23fca1c0-c75b-81c3-ac5f-edcbea216039" class="bulleted-list"><li style="list-style-type:disc">It is required that:<ul id="23fca1c0-c75b-81e7-9528-c61e94313dc8" class="bulleted-list"><li style="list-style-type:circle">The liquidator/liquidation committee shall exercise the powers granted to it by the Higher Banking Commission under the supervision of this Commission. This authority shall be returned to the Commission in advance for all matters related to operations that involve additional risks or the liquidation of assets for large sums or significant losses.</li></ul><ul id="23fca1c0-c75b-8189-b618-ee9a3912ffdf" class="bulleted-list"><li style="list-style-type:circle">The liquidator/liquidation committee shall be assisted by the National Deposit Guarantee Institution in the payment process.</li></ul><ul id="23fca1c0-c75b-814d-ba08-d6b50012b9bb" class="bulleted-list"><li style="list-style-type:circle">The liquidator/liquidation committee shall replace the board of directors and management of the concerned bank in all decisions, after obtaining the written approval of the Higher Banking Commission.</li></ul><ul id="23fca1c0-c75b-81c2-a474-c6383ee8e086" class="bulleted-list"><li style="list-style-type:circle">The liquidator/liquidation committee shall conduct an assessment of the concerned bank or request independent assessors to conduct an assessment or update a previous assessment when needed.</li></ul></li></ul><p id="23fca1c0-c75b-8120-a754-d78652a90fde" class="">27</p><hr id="23fca1c0-c75b-8166-a105-c90d99c4ca3d"/><h2 id="23fca1c0-c75b-8194-b738-f5051158c971" class="">Page 28</h2><ul id="23fca1c0-c75b-81e6-95d5-ef38b5a02af5" class="bulleted-list"><li style="list-style-type:disc">The liquidator/liquidation committee shall submit periodic reports to the Higher Banking Commission on the progress of the liquidation process at the concerned bank and shall provide, within a deadline set by the Commission, any additional reports or information requested by this Commission.</li></ul><ul id="23fca1c0-c75b-812f-a689-da23f8fd1bc8" class="bulleted-list"><li style="list-style-type:disc">The liquidator/liquidation committee shall have the right of access to all information necessary to carry out its duties.</li></ul><p id="23fca1c0-c75b-810a-aca8-ee3955396628" class=""><strong>Article 26: Hierarchy in the Liquidation Process</strong></p><ul id="23fca1c0-c75b-81a4-b9f7-db0860d5073f" class="bulleted-list"><li style="list-style-type:disc">In cases of liquidation, the adopted international auditing standards shall be applied, with respect for the hierarchy of own funds and creditors and the protection of depositors.<br/>This article shall be applied in accordance with the mechanisms defined by the Financial Restructuring and Deposit Recovery Law.<br/></li></ul><p id="23fca1c0-c75b-81eb-b389-c75deaa99a17" class=""><strong>Article 27: Claims of Creditors and Depositors</strong></p><ul id="23fca1c0-c75b-81a9-b5b4-ffc19c84e1ab" class="bulleted-list"><li style="list-style-type:disc">Creditors must declare their debts and rights to the liquidator/liquidation committee within three months from the publication of the appointment decision of the liquidator/liquidation committee in the Official Gazette, in at least one local newspaper, and on the electronic website as stated in Article 24, under penalty of forfeiting their right to claim them.</li></ul><ul id="23fca1c0-c75b-814a-a9b5-f54abb5cb259" class="bulleted-list"><li style="list-style-type:disc">The bank under liquidation shall preserve the depositors’ right to access information related to the nature and value of their deposits.</li></ul><p id="23fca1c0-c75b-815a-9a9b-ea317b67c76d" class=""><strong>Article 28: Role of the National Deposit Guarantee Institution in the Liquidation Process</strong></p><p id="23fca1c0-c75b-8160-b5e4-ef482fcaab42" class="">In the event a bank is liquidated in accordance with the provisions of this law, deposits shall be covered according to the standards defined by the Financial Restructuring and Deposit Recovery Law.</p><p id="23fca1c0-c75b-81f5-876f-f3cfbeff524f" class="">28</p><hr id="23fca1c0-c75b-81b2-99a7-fad59b9ec12d"/><h2 id="23fca1c0-c75b-81d7-85a0-d8f330e2be1a" class="">Page 29</h2><p id="23fca1c0-c75b-8197-b5aa-fb2daec5601c" class=""><strong>Article 29: The Special Court</strong></p><ul id="23fca1c0-c75b-81e2-a8a4-da24dda1ad7b" class="bulleted-list"><li style="list-style-type:disc">The provisions of Article 15 of Law No. 110 dated 7/11/1991, related to the establishment of a special court in Beirut, shall apply. This court has the authority to rule on appeals submitted in implementation of the provisions of this law and to resolve any dispute that arises between a creditor or a depositor and the liquidator/liquidation committee regarding a debt owed by the bank under liquidation.</li></ul><ul id="23fca1c0-c75b-8149-8b8f-fa54ff56d8ff" class="bulleted-list"><li style="list-style-type:disc">Any pending lawsuit before the Lebanese Court of First Instance related to an existing dispute between a creditor or depositor and the concerned bank, for which a final decision has not been issued, shall be administratively referred to the Special Court within one month of the appointment of the liquidator/liquidation committee.</li></ul><ul id="23fca1c0-c75b-8182-b61c-d4b4d2fdda8b" class="bulleted-list"><li style="list-style-type:disc">The Special Court shall hear all cases related to the temporary precautionary attachment mentioned in this law.</li></ul><ul id="23fca1c0-c75b-81a3-8c3a-ed012370ccdd" class="bulleted-list"><li style="list-style-type:disc">With the exception of an appeal before the Lebanese Court of Appeal within a period of 60 days from the date of the issuance of the final judgment, the decisions of the Special Court are not subject to any means of administrative or judicial review, whether ordinary or extraordinary.</li></ul><p id="23fca1c0-c75b-8187-9dab-f9d389d2950f" class=""><strong>Article 30: Financing the Liquidation Process</strong></p><p id="23fca1c0-c75b-8105-bc05-cc571a5114f6" class="">The bank under liquidation shall bear all expenses related to the liquidation process as determined or approved by the Higher Banking Commission.</p><p id="23fca1c0-c75b-8192-835a-fbb9883cdaa7" class="">29</p><hr id="23fca1c0-c75b-81af-99f3-e3020eb27873"/><h2 id="23fca1c0-c75b-817b-ae95-d2b9b1dbb4c3" class="">Page 30</h2><p id="23fca1c0-c75b-8148-9d45-e02100451328" class=""><strong>Chapter Ten: Miscellaneous Provisions</strong></p><p id="23fca1c0-c75b-8112-8f6f-d33c07da1aaa" class=""><strong>Article 31: Appeal of Decisions of the Higher Banking Commission</strong></p><p id="23fca1c0-c75b-818a-a063-d2751039b68c" class="">All decisions issued by the Higher Banking Commission are subject to appeal before the special court established by Law No. 110 dated 7/11/1991, and the principles of civil procedure related to the court of first instance shall be followed. The appeal before the competent court does not suspend the execution of the appealed decision.</p><p id="23fca1c0-c75b-8142-8f20-e5292c380e6c" class=""><strong>Article 32: Non-compliance with the Provisions of this Law or Obstruction of Work</strong></p><p id="23fca1c0-c75b-81d5-ac83-d076de83eb56" class="">Any party that does not immediately comply with the provisions of this law or otherwise obstructs the work of the Higher Banking Commission or the temporary manager in the course of performing their duties shall be subject to a fine, the value of which is determined by the Higher Banking Commission, provided it is not less than 300 times the minimum wage in Lebanon. The Higher Banking Commission shall be the competent authority to determine whether there is a violation of its decisions or non-compliance with the provisions of this law. The proceeds of this fine shall be allocated to cover the expenses of the Commission related to the application of this law.</p><p id="23fca1c0-c75b-8124-b582-f9cc7e37bbe1" class=""><strong>Article 33: Cross-Border Cooperation</strong></p><p id="23fca1c0-c75b-8174-8741-c85df37b89bf" class="">The Higher Banking Commission shall communicate and cooperate, in accordance with legal frameworks, with the competent authority in the home country or in the host country and with the supervisory authority in the home country or in the host country through the exchange of non-publicly available information regarding the application of this law.</p><p id="23fca1c0-c75b-8171-9108-e9379e252d0c" class=""><strong>Article 34: Legal Immunity</strong></p><p id="23fca1c0-c75b-811a-91dd-f4c32305a0ee" class="">In the context of performing their duties or carrying out any action or omission that occurred during the exercise of their powers and responsibilities noted in this law, no liability shall be incurred by the Higher Banking Commission, the Banking Control Commission, the temporary manager, and the liquidator/liquidation committee, unless a final judgment is issued proving that the action or omission resulted from bad faith or was the result of fraud, negligence, or gross error on their part. The Higher Banking Commission shall bear the compensation for the cost of legal claims filed against it or against any of its members, employees, or representatives, and the committee shall bear</p><p id="23fca1c0-c75b-81c7-b8c6-d2ab47ca078e" class="">30</p><hr id="23fca1c0-c75b-8136-bc72-dcc7095a38dd"/><h2 id="23fca1c0-c75b-8180-9236-cf29f27b2092" class="">Page 31</h2><p id="23fca1c0-c75b-810d-b92f-fdb95da04086" class="">the Banking Control Commission compensation for all legal claims filed against it or against any of its members, employees or representatives, except in the case of the final judgment referred to above.</p><p id="23fca1c0-c75b-819b-bd47-f6d2a42a3737" class="">And no liability shall be incurred by the employees of the bank whose situation is being rectified as a result of their compliance with the decisions of the Higher Banking Commission. They are, in this case, immune from any judicial procedure or lawsuit filed against them.</p><p id="23fca1c0-c75b-8194-a4aa-ced7bf91803c" class=""><strong>Article 35: Banking Secrecy Law</strong></p><p id="23fca1c0-c75b-8137-82ad-ec786a0d8a30" class="">The provisions of Banking Secrecy Law No. 306/2022 and its amendments shall apply.</p><p id="23fca1c0-c75b-81b9-ac1e-d96663dd899a" class=""><strong>Article 36: Requirements for Banks</strong></p><p id="23fca1c0-c75b-810f-a059-c5ff433be9f7" class="">All banks must have fulfilled the following:</p><ul id="23fca1c0-c75b-8154-99f4-c226f67bae93" class="bulleted-list"><li style="list-style-type:disc">The minimum requirements for own funds applicable to considering banks’ assets at Banque du Liban at their book value before any provisions for potential losses on deposits at Banque du Liban, and considering investments in Eurobonds on the basis of net value after taking into account the expected loss ratio determined by Banque du Liban.</li></ul><ul id="23fca1c0-c75b-814b-95be-e0b13c9601ab" class="bulleted-list"><li style="list-style-type:disc">The minimum liquidity requirements, on the basis that the bank’s assets at Banque du Liban are considered within book maturities with a rescheduling of deposit maturities by the bank.</li></ul><p id="23fca1c0-c75b-8154-af11-e500f7332e7e" class="">These prudential requirements shall be amended in accordance with the Financial Regulation and Deposit Recovery Law, which allows for the restoration of balance to the financial system in Lebanon as stipulated in Article 37 of this law, upon its issuance.</p><ul id="23fca1c0-c75b-8107-a840-d9f0036422da" class="bulleted-list"><li style="list-style-type:disc">Banks identified by the Banking Control Commission as not being in compliance with the above requirements must address their violations through mechanisms, including:</li></ul><ul id="23fca1c0-c75b-81a4-aec4-fb3367bf166f" class="bulleted-list"><li style="list-style-type:disc">Injecting own funds.</li></ul><ul id="23fca1c0-c75b-8195-a687-f34ccd340230" class="bulleted-list"><li style="list-style-type:disc">Increasing their liquidity.</li></ul><p id="23fca1c0-c75b-81b1-b350-d44bee1b2c09" class="">31</p><hr id="23fca1c0-c75b-810b-87a3-c8f95b55ba99"/><h2 id="23fca1c0-c75b-8153-aa90-e93341272642" class="">Page 32</h2><p id="23fca1c0-c75b-81c3-b5e3-d9bb25f5339b" class=""><strong>Article 37: Entry into Force of the Law</strong></p><p id="23fca1c0-c75b-8131-8524-e8a10a4f9b56" class="">This law shall be published in the Official Gazette, and its implementation shall be suspended until the Financial Regulation and Deposit Recovery Law is passed and published.</p><p id="23fca1c0-c75b-81b1-9c34-e6415e34a09d" class=""><strong>Annex No. 1Hierarchy of Own Funds and Creditors</strong></p><p id="23fca1c0-c75b-81e2-a145-cf23d346be3a" class="">The hierarchy below applies for the purpose of loss absorption, regardless of any relevant provisions mentioned in the contracts or in the prospectuses related to the existing capital instruments and liabilities.</p><table id="23fca1c0-c75b-81be-a653-d78bcf6172ce" class="simple-table"><thead class="simple-table-header"><tr id="23fca1c0-c75b-81a3-9b05-e5046d0d376a"><th id="I_aW" class="simple-table-header-color simple-table-header">Element</th><th id="F\OW" class="simple-table-header-color simple-table-header">Rank Approved for Loss Absorption</th></tr></thead><tbody><tr id="23fca1c0-c75b-815a-8f1e-d7f150004ed1"><td id="I_aW" class=""><strong>I- Own Funds</strong></td><td id="F\OW" class=""></td></tr><tr id="23fca1c0-c75b-8101-8e52-f3e1c649c04d"><td id="I_aW" class="">Common shares (including premiums) and other capital instruments included within the rights of common shareholders</td><td id="F\OW" class="">1</td></tr><tr id="23fca1c0-c75b-817d-93ee-daa4285bad14"><td id="I_aW" class="">Cash advances included within the rights of common shareholders</td><td id="F\OW" class="">1</td></tr><tr id="23fca1c0-c75b-81b0-8502-f7a54792f189"><td id="I_aW" class="">Cash advances included within the Additional Core Equity</td><td id="F\OW" class="">2</td></tr><tr id="23fca1c0-c75b-81fb-b961-f3781ee800cb"><td id="I_aW" class="">Preferred shares (including premiums) and other capital instruments included within the Additional Core Equity</td><td id="F\OW" class="">2</td></tr><tr id="23fca1c0-c75b-8148-adf3-f08150b6601a"><td id="I_aW" class="">Preferred shares (including premiums) and other capital instruments included within the supplementary own funds</td><td id="F\OW" class="">3</td></tr><tr id="23fca1c0-c75b-81dd-b8d9-c5ae0050d1dd"><td id="I_aW" class="">Subordinated debts included within the supplementary own funds</td><td id="F\OW" class="">3</td></tr></tbody></table><p id="23fca1c0-c75b-8173-b673-fa681e60fcc7" class="">32</p><hr id="23fca1c0-c75b-8179-8b80-eea6d466b2b2"/><h2 id="23fca1c0-c75b-81f1-9b14-db91fae49658" class="">Page 33</h2><table id="23fca1c0-c75b-8172-8d17-d958bb14ccd2" class="simple-table"><thead class="simple-table-header"><tr id="23fca1c0-c75b-81fa-aa02-eddb7594de3f"><th id="UdUH" class="simple-table-header-color simple-table-header">Element</th><th id="G;hF" class="simple-table-header-color simple-table-header">Rank Approved for Loss Absorption</th></tr></thead><tbody><tr id="23fca1c0-c75b-81fc-95ff-d5a97afc6aa4"><td id="UdUH" class=""><strong>II- Liabilities</strong></td><td id="G;hF" class=""></td></tr><tr id="23fca1c0-c75b-8159-8351-c1b27475f2ae"><td id="UdUH" class="">Subordinated debts not accepted within own funds</td><td id="G;hF" class="">4</td></tr><tr id="23fca1c0-c75b-8157-bf24-f58d5eba1101"><td id="UdUH" class="">Deposits of major shareholders, members of the board of directors, general managers, assistants/deputies of general managers, and their spouses and children</td><td id="G;hF" class="">5</td></tr><tr id="23fca1c0-c75b-819a-aa3f-dcbb4e9e0634"><td id="UdUH" class=""><strong>Unsecured liabilities (excluding new funds)*</strong></td><td id="G;hF" class=""></td></tr><tr id="23fca1c0-c75b-812f-968a-ca9bf24cc180"><td id="UdUH" class="">Bonds issued by the bank and owned by individuals and institutions from the financial and non-financial sectors, related or unrelated to the bank</td><td id="G;hF" class="">6</td></tr><tr id="23fca1c0-c75b-8102-a74b-f0cd4eff245f"><td id="UdUH" class="">Liabilities of related and unrelated financial sector institutions; on-balance sheet deposits belonging to financial sector institutions and arising from credit agreements between those institutions in their capacity as financial intermediaries and their clients</td><td id="G;hF" class="">6</td></tr><tr id="23fca1c0-c75b-8126-90bb-ddb88a1e78a5"><td id="UdUH" class="">Other unsecured liabilities (excluding client deposits)</td><td id="G;hF" class="">6</td></tr><tr id="23fca1c0-c75b-8115-abc0-df78b491e814"><td id="UdUH" class="">Uninsured/unprotected client deposits (excluding client deposits in Lebanese Pounds and new funds)*</td><td id="G;hF" class="">7</td></tr><tr id="23fca1c0-c75b-81af-a83d-c95d890eab24"><td id="UdUH" class="">Insured/protected client deposits</td><td id="G;hF" class="">8</td></tr></tbody></table><p id="23fca1c0-c75b-8145-b9fd-f129bb1ca158" class="">33</p><hr id="23fca1c0-c75b-819a-9585-e82bbf63d53d"/><h2 id="23fca1c0-c75b-8113-91f1-e52eda32c5ae" class="">Page 34</h2><table id="23fca1c0-c75b-8128-9883-c3af363bc253" class="simple-table"><thead class="simple-table-header"><tr id="23fca1c0-c75b-81d4-8a8c-ecd503d2ea00"><th id="]dMa" class="simple-table-header-color simple-table-header"><strong>III- Excluded Liabilities</strong></th><th id="hYFL" class="simple-table-header-color simple-table-header"></th></tr></thead><tbody><tr id="23fca1c0-c75b-8199-a8c8-e31728d3b319"><td id="]dMa" class="">Deposits in banks belonging to the National Social Security Fund, the National Deposit Guarantee Institution, retirement and mutual funds for judges, syndicates, schools, and universities, as well as special funds belonging to all security forces, the principal institutions affiliated with the Ministry of National Defense, and their affiliated institutions.</td><td id="hYFL" class=""></td></tr><tr id="23fca1c0-c75b-81e3-89d2-fc4539cacd0b"><td id="]dMa" class="">Deposits of foreign embassies subject to the Vienna Convention on Diplomatic Relations of April 18, 1961. This exclusion does not include the staff of these bodies.</td><td id="hYFL" class=""></td></tr><tr id="23fca1c0-c75b-81e2-9e54-d12c84766ae7"><td id="]dMa" class="">Deposits of Arab, regional, and international organizations if they are protected by treaties/agreements whose provisions take precedence over the provisions of this law. This exclusion does not include the staff of these bodies.</td><td id="hYFL" class=""></td></tr><tr id="23fca1c0-c75b-812b-ba92-ca56294e2266"><td id="]dMa" class="">Payments due to suppliers of basic services (IT, rent…)</td><td id="hYFL" class=""></td></tr><tr id="23fca1c0-c75b-8172-9eed-fb3d380f41c1"><td id="]dMa" class="">Taxes due</td><td id="hYFL" class=""></td></tr><tr id="23fca1c0-c75b-8155-8f2c-df53018c0f01"><td id="]dMa" class="">New Funds **</td><td id="hYFL" class="">Does not apply</td></tr><tr id="23fca1c0-c75b-81db-8a9c-e823446bb7d9"><td id="]dMa" class="">Client deposits in Lebanese Pounds</td><td id="hYFL" class="">Does not apply</td></tr></tbody></table><ul id="23fca1c0-c75b-81f9-b9e3-ceea2afcba70" class="bulleted-list"><li style="list-style-type:disc">New funds are funds in foreign currencies proven to have been received from abroad via transfers or cash deposits after October 30, 2019.</li></ul><p id="23fca1c0-c75b-816d-be8d-d124630765aa" class=""><strong>Justifying Reasons</strong></p><p id="23fca1c0-c75b-81f6-b71d-c9ef5bcd59d7" class="">For six years, Lebanon has been facing a severe financial crisis that has deprived depositors of access to their deposits—the fruit of their life’s work in most cases—and has severely impacted the banking sector. The State’s responsibility to find appropriate solutions stems from two inseparable principles: concern for the rights of depositors and working to ensure the recovery of the banking sector so it can fully perform its credit role, finance the economy, and stimulate its growth.</p><p id="23fca1c0-c75b-8106-8e60-f0365e925c91" class="">34</p><hr id="23fca1c0-c75b-81b9-b1b9-c2d9e0284ff1"/><h2 id="23fca1c0-c75b-81d2-9a47-f261276e2ab1" class="">Page 35</h2><p id="23fca1c0-c75b-8162-832e-c6170306d076" class=""><strong>Justifying Reasons</strong></p><p id="23fca1c0-c75b-8174-a70d-f27e2e79c91d" class="">Since addressing the financial, economic, and banking crises from which Lebanon is suffering, in addition to preserving the rights of depositors, requires legislative steps linked to three main reforms concerning banking secrecy, bank restructuring, and addressing the financial gap in a way that allows for the restoration of balance to the financial system,</p><p id="23fca1c0-c75b-819e-8055-eb408998c9a7" class="">Accordingly, the government has approved, as a first step, a draft law aiming to amend the banking secrecy law, as a necessary condition for accountability and for a precise understanding of the financial gap, with a retroactive effect for ten years from the date of submission of each request.</p><p id="23fca1c0-c75b-811b-8967-c98a360ac1ec" class="">In preparation for establishing a law to restore financial balance and recover deposits, which would allow for restoring balance to the financial system, this draft law concerning the resolution of the situation of banks in Lebanon comes as a second step. It aims to establish a modern legal framework in accordance with the best international standards, a framework which is lacking in Lebanese banking legislation and is needed by the government, as well as by Banque du Liban, to deal with all financial crises, foremost among them the current, extremely damaging crisis for Lebanese citizens and Lebanon’s economy.</p><p id="23fca1c0-c75b-8163-9dda-f024768ae141" class="">In addition to responding to this urgent need, the proposed draft law has been, and continues to be, called for by Lebanese legal professionals and by international institutions interested in assisting Lebanon.</p><p id="23fca1c0-c75b-81c1-99b9-c96bfbcc2e70" class="">These two steps will be followed, in the near future, by a third step, which consists of establishing a draft law on addressing the financial gap in a way that allows for restoring balance to the financial system and contributes to extricating Lebanon from the depths of the crisis it has experienced since 2019.</p><p id="23fca1c0-c75b-81e7-b736-d6f2e840107a" class="">It should be noted that the implementation of this draft law, in the context of executing the three related steps mentioned above, is suspended until the Financial Regulation and Deposit Recovery Law is passed, as the latter is considered a necessary condition for restoring balance to the financial system.</p><p id="23fca1c0-c75b-81bb-a379-edac27f34701" class="">Therefore, the government has prepared the attached draft law and, in submitting it to the esteemed Parliament, hopes for its approval.</p><p id="23fca1c0-c75b-8177-8350-d04f342d96ad" class="">35</p><hr id="23fca1c0-c75b-81f7-8492-cb8cf3569398"/></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
